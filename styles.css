@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color:#f0f0f0;
     color: rgb(0, 0, 0);
     font: normal 20pt Arial;
 }
@@ -8,11 +8,23 @@ body {
     box-shadow: 1px 1px 5px #ccc;
     background-color: white;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .form{
     width: 400px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+.card-top{
+    text-align: center;
+}
+
+.imglogin{
+    width: 150px;
+}
+
+.title{
+    color:blue;
 }
