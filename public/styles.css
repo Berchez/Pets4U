@@ -4,63 +4,6 @@ body {
     font: normal 20pt Arial;
 }
 
-.card{
-    box-shadow: 1px 1px 5px #ccc;
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.form{
-    width: 400px;
-    margin: auto;
-    padding-top: 40px;
-}
-
-.card-top{
-    text-align: center;
-}
-
-.imglogin{
-    width: 150px;
-}
-
-.title{
-    color:black;
-}
-
-.card-group > label{
-    width: 100%;
-    color: rgb(75, 75, 75);
-    display: block;
-}
-
-.card-group > input{
-    border-radius: 5px;
-    outline: 0;
-    width: 100%;
-    height: 25px;
-    padding: 5px;
-}
-
-.card-group{
-    margin-bottom: 17px;
-}
-
-.card-group > button{
-    background-image: linear-gradient(to right,rgb(0, 0, 158),rgb(102, 20, 95));
-    width: 100%;
-    border-radius:30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
-}
-
-.btn button:hover{
-    background-image: linear-gradient(to right,rgb(1, 1, 70),rgb(51, 3, 47));    
-}
-
 .nome > input{
     width: 30%;
     height: 25px;
