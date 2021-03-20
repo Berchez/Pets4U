@@ -15,13 +15,13 @@ exports.login = async (req,res) => {
 
         if(!email || !senha) {
             return res.status(400).render('login', {
-                message: 'Please provide an email and password'
+                message: 'Coloque o email e senha'
             })
         }
 
-        db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
-            console.log(results);
-            console.log(error);
+        // db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
+        //     console.log(results);
+        //     console.log(error);
             /*if( !results || !(await bcrypt.compare(senha, results[0].senha)) ) {
                 res.status(401).render('login', {
                     message: 'Email or password is incorrect'
@@ -45,7 +45,7 @@ exports.login = async (req,res) => {
                 res.cookie('jwt', token, cookieOptions);
                 res.status(200).redirect("/");
             }*/
-        })
+        //})
 
     }catch(error) {
         console.log(error);
