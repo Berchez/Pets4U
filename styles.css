@@ -2,6 +2,7 @@ body {
     background-color:#f0f0f0;
     color: rgb(0, 0, 0);
     font: normal 20pt Arial;
+    margin:10px;
 }
 
 .card{
@@ -91,20 +92,7 @@ body {
     padding:0;
     font-family: Arial,sans-serif;
   }
-  
-  body{
-    margin:10px;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  /* esconde as ancoras da tela */
-  a.links{
-    display: none;
-  }
-  
+       
   /* content que contem os formulários */
   .content{
     width: 500px;
@@ -135,16 +123,12 @@ body {
   p{
     margin-bottom:15px;
   }
-  p:first-child{
-    margin: 0px;
-  }
+ 
   label{
     color: #405c60;
     position: relative;
   }
   
-  /**** advanced input styling ****/
-  /* placeholder */
   ::-webkit-input-placeholder  {
     color: #bebcbc; 
     font-style: italic;
@@ -169,9 +153,6 @@ body {
     
     -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
     box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
   }
   
   /*estilo do botão submit */
@@ -188,16 +169,12 @@ body {
     
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    
-    transition: all 0.2s linear;
   }
   input[type="submit"]:hover{
     background: #4ab3c6;
   }
   
-  /* estilos para para ambos os formulários */
-  #cadastro, 
-  #login{
+  #cadastro{
     position: absolute;
     top: 0px;
     width: 88%; 
@@ -205,76 +182,4 @@ body {
     margin: 0 0 35px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189,0.8);
-    
-    -webkit-box-shadow: 5px;
-    border-radius: 5px;
-    
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-  
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-  }
-  
-  #paracadastro:target ~ .content #cadastro,
-  #paralogin:target ~ .content #login{
-    z-index: 2;
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-  
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s;
-  }
-  #registro:target ~ .content #login,
-  #paralogin:target ~ .content #cadastro{
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
-  }
-  
-  /*fadeInLeft*/
-  @-webkit-keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  /*fadeOutLeft*/
-  @-webkit-keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-  }
-  
-  @keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-  }
+  } 
