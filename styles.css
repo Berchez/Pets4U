@@ -60,3 +60,61 @@ body {
 .btn button:hover{
     background-image: linear-gradient(to right,rgb(1, 1, 70),rgb(51, 3, 47));    
 }
+
+.nome > input{
+    width: 30%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+
+.gen{
+    padding: 4px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.info > input{
+    height: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 80px;   
+}
+
+.email > input{
+    height: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.endereço > input{
+    height: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.cidade > input{
+    height: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.uf{
+    padding: 4px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.save > button{
+    border-radius: 5px;
+    margin-left: 40%;
+    width: 20%;
+    padding: 4px;
+    background-color:#1800ec;
+    color:white
+}
