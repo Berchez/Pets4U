@@ -12,40 +12,41 @@ const db = mysql.createConnection({
 exports.login = async (req,res) => {
     try {
         const {email, senha} = req.body;
-
+        console.log(`Email: ${email}\nSenha: ${senha}`)
         if(!email || !senha) {
             return res.status(400).render('login', {
                 message: 'Coloque o email e senha'
             })
         }
 
-        // db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
-        //     console.log(results);
-        //     console.log(error);
-            /*if( !results || !(await bcrypt.compare(senha, results[0].senha)) ) {
+        db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
+            console.log(results);
+            console.log(error);
+            if( !results || !(await bcrypt.compare(senha, results[0].senha))) {
                 res.status(401).render('login', {
-                    message: 'Email or password is incorrect'
+                    message: 'Email ou senha incorretos'
                 })
-            } else {
-                const id = results[0].id;
+            }
+            //else {
+            //     const id = results[0].id;
 
-                const token = jwt.sign({id}, process.env.JWT_SECRET, {
-                    expiresIn: process.env.JWT_EXPIRES_IN
-                })
+            //     const token = jwt.sign({id}, process.env.JWT_SECRET, {
+            //         expiresIn: process.env.JWT_EXPIRES_IN
+            //     })
 
-                console.log("The token is" + token);
+            //     console.log("The token is" + token);
 
-                const cookieOptions = {
-                    expires: new Date(
-                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-                    ),
-                    httpOnly: true
-                }
+            //     const cookieOptions = {
+            //         expires: new Date(
+            //             Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+            //         ),
+            //         httpOnly: true
+            //     }
 
-                res.cookie('jwt', token, cookieOptions);
-                res.status(200).redirect("/");
-            }*/
-        //})
+            //     res.cookie('jwt', token, cookieOptions);
+            //     res.status(200).redirect("/");
+            // }
+        })
 
     }catch(error) {
         console.log(error);
