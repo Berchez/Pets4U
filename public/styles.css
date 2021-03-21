@@ -199,13 +199,3 @@ input[type="submit"]:hover {
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
 }
-
-button{
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 30%;
-    border-radius: 30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
-}
