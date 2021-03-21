@@ -190,11 +190,11 @@ input[type="submit"]:hover {
 }
 
 #cadastro {
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 88%;
     padding: 18px 6% 60px 6%;
-    margin: 20px 0 35px 0;
+    margin: 20px 0 20px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
