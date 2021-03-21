@@ -194,3 +194,30 @@ input[type="submit"]:hover {
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
 }
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: #405c60;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-expand-lg {
+    padding: 1rem .8rem;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #4ff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
