@@ -27,25 +27,26 @@ exports.login = async (req,res) => {
                     message: 'Email ou senha incorretos'
                 })
             }
-            //else {
-            //     const id = results[0].id;
+            else {
+                const id = results[0].id;
 
-            //     const token = jwt.sign({id}, process.env.JWT_SECRET, {
-            //         expiresIn: process.env.JWT_EXPIRES_IN
-            //     })
+                const token = jwt.sign({id: id}, process.env.JWT_SECRET, {
+                     expiresIn: process.env.JWT_EXPIRES_IN
+                })
 
-            //     console.log("The token is" + token);
+                console.log("O token é: " + token);
 
-            //     const cookieOptions = {
-            //         expires: new Date(
-            //             Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-            //         ),
-            //         httpOnly: true
-            //     }
+                const cookieOptions = {
+                    expires: new Date(
+                       Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000 //horas do dia * horas * minutos * milissegundos
+                    ),
+                    httpOnly: true
+                }
 
-            //     res.cookie('jwt', token, cookieOptions);
-            //     res.status(200).redirect("/");
-            // }
+                //setando o coockie
+                res.cookie('jwt', token, cookieOptions);
+                res.status(200).redirect("/register");
+            }
         })
 
     }catch(error) {
@@ -65,11 +66,11 @@ exports.register = (req, res) => {
 
         if(results.length > 0) {
             return res.render('register', {
-                message: 'That email is already in use.'
+                message: 'Esse email já foi cadastrado.'
             })
         } else if( senha !== confirmsenha) {
             return res.render('register', {
-                message: 'Password do not match.'
+                message: 'As senhas são diferentes.'
             })
         }
 
@@ -82,7 +83,7 @@ exports.register = (req, res) => {
             } else {
                 console.log(results);
                 return res.render('register', {
-                    message: 'User registered'
+                    message: 'Casdastro realizado com sucesso'
                 })
             }
         })
