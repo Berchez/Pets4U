@@ -11,7 +11,7 @@ const db = mysql.createConnection({
 
 exports.login = async (req,res) => {
     try {
-        const {email, senha} = req.body;
+        const {senha, email} = req.body;
         console.log(`Email: ${email}\nSenha: ${senha}`)
         if(!email || !senha) {
             return res.status(400).render('login', {
@@ -45,7 +45,7 @@ exports.login = async (req,res) => {
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                res.status(200).redirect("/register");
+                res.status(200).redirect("/home");
             }
         })
 
@@ -57,32 +57,37 @@ exports.login = async (req,res) => {
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const {nome, Gênero, Data, RG, CPF, Email, senha, confirmsenha, celular, End, Número, bairro, Comp, cidade, UF, CEP} = req.body;
+    const {nome_cad, email_cad, senha_cad, confirmsenha, Data, RG, CPF, Gênero, celular, cidade, CEP, UF, End, Número, bairro, Comp} = req.body;
 
-    db.query('SELECT email FROM users WHERE email = ?', [Email], async (error, results) => {
+    db.query('SELECT email FROM users WHERE email = ?', [email_cad], async (error, results) => {
         if(error) {
             console.log(error);
         }
 
         if(results.length > 0) {
+            console.log('Esse email ja foi cadastrado');
             return res.render('register', {
                 message: 'Esse email já foi cadastrado.'
             })
-        } else if( senha !== confirmsenha) {
+        } else if( senha_cad !== confirmsenha) {
+            console.log('senhas diferem');
+
             return res.render('register', {
                 message: 'As senhas são diferentes.'
             })
         }
 
-        let hashsenha = await bcrypt.hash(senha, 8);
+        let hashsenha = await bcrypt.hash(senha_cad, 8);
         console.log(hashsenha);
 
-        db.query('INSERT INTO users SET ?', {Email: Email, Senha:hashsenha, RG: RG, Nome_Completo: nome, CPF: CPF, Data_Nascimento: Data, Gênero: Gênero, Celular: celular, Endereço: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
+        db.query('INSERT INTO users SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Gênero: Gênero, Celular: celular, Endereço: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
             if(error) {
                 console.log(error);
             } else {
+            console.log('Logado');
+
                 console.log(results);
-                return res.render('register', {
+                return res.redirect('/login', {
                     message: 'Casdastro realizado com sucesso'
                 })
             }
