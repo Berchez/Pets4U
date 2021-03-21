@@ -1,0 +1,40 @@
+body {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: #066a75;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link .form-inline {
+    padding: 1rem .8rem;
+}
+
+.navbar-brand,
+.navbar-nav {
+    padding: 0;
+    color: black;
+}
+
+.navbar-brand:hover,
+.navbar-nav:hover {
+    color: #fff;
+}
+
+input,
+textarea {
+    padding: 10px;
+    display: block;
+    width: 90%;
+}
