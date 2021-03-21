@@ -45,7 +45,7 @@ exports.login = async (req,res) => {
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                res.status(200).redirect("/home");
+                res.redirect("/home");
             }
         })
 
@@ -85,11 +85,8 @@ exports.register = (req, res) => {
                 console.log(error);
             } else {
             console.log('Logado');
-
                 console.log(results);
-                return res.redirect('/login', {
-                    message: 'Casdastro realizado com sucesso'
-                })
+                return res.redirect('/login');
             }
         })
     })
