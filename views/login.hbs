@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
-    <body>
-        <form class="form" action="/auth/login" method="POST">
-            <div class="card">
-                <div class="card-top">
-                    <img class="imglogin" src="https://cdn.icon-icons.com/icons2/622/PNG/512/baidu-paw-logo_icon-icons.com_57182.png" alt="">
-                    <h3 class="title">Painel de controle</h3>
-                </div>
-                <div class="card-group">
-                    <label>E-mail:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
-                </div>
-                <div class="card-group">
-                    <label>Senha:</label>
-                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
-                </div> 
-                <div class="card-group btn">
-                    <button type="submit">Login</button>  
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <form class="form" action="/auth/login"  method="POST">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="/download.png" alt=""><br><br>
+                <h3 class="title">Painel de controle</h3>
             </div>
-        </form>
-        {{#if message}}
-            <h4 class="alert alert-danger mt-4">{{message}}</h4>
-        {{/if}}
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    </body>
+            <div class="card-group">
+                <label>Usuário:</label>
+                <input type="text" name="Usuário" placeholder="Digite seu nome de usuário" required>
+            </div>
+            <div class="card-group">
+                <label>Senha:</label>
+                <input type="password" name="Senha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="card-group btn">
+                <button type="submit">LOGIN</button>
+            </div>
+        </div>
+    </form>
+</body>
+
 </html>
