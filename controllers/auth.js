@@ -45,7 +45,9 @@ exports.login = async (req,res) => {
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                res.status(200).redirect("/register");
+                res.status(200).redirect('login', {
+                    message: 'Email ou senha incorretos'
+                })
             }
         })
 
@@ -57,7 +59,7 @@ exports.login = async (req,res) => {
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const {nome, Gênero, Data, RG, CPF, Email, senha, confirmsenha, celular, End, Número, bairro, Comp, cidade, UF, CEP} = req.body;
+    const {nome, Gênero, Data, RG, CPF, Email, senha, confirmasenha, celular, End, Número, bairro, Comp, cidade, UF, CEP} = req.body;
 
     db.query('SELECT email FROM users WHERE email = ?', [Email], async (error, results) => {
         if(error) {
@@ -65,10 +67,13 @@ exports.register = (req, res) => {
         }
 
         if(results.length > 0) {
+            console.log('Esse email já foi cadastrado.');
             return res.render('register', {
                 message: 'Esse email já foi cadastrado.'
             })
-        } else if( senha !== confirmsenha) {
+        } else if( senha !== confirmasenha) {
+            console.log('As senhas são diferentes.');
+            console.log(`Senha: ${senha}\nConfirma: ${confirmasenha}`);
             return res.render('register', {
                 message: 'As senhas são diferentes.'
             })
@@ -82,7 +87,8 @@ exports.register = (req, res) => {
                 console.log(error);
             } else {
                 console.log(results);
-                return res.render('register', {
+                console.log(results);
+                return res.render('Casdastro realizado com sucesso', {
                     message: 'Casdastro realizado com sucesso'
                 })
             }
