@@ -8,46 +8,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="formulário"><h1>Formulário de cadastro</h1></div>
-    <div class="conteudo">
-        <form action="">
-            <div class="nome">
-                <label>Nome Completo:</label>
-                <input type="text" name="nome" placeholder="Nome Completo" required>
-                <label for="Gênero">Gênero:</label>
+    <div class="container" >   
+        <div class="content">      
+          <div id="cadastro">
+            <form method="post" action=""> 
+              <h1>Cadastro</h1> 
+          
+              <p> 
+                <label for="nome_cad">Nome Completo</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+              </p>
+              
+              <p> 
+                <label for="email_cad">E-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+              </p>
+              
+              <p> 
+                <label for="senha_cad">Senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/><br>
+              </p>
+              <p>
+                <label>Confirma senha</label>
+                <input type="password" name="confirmsenha" placeholder="Confirma Senha" required>
+              </p>
+              <p>
+                <label>Data de nascimento</label>
+                <input type="text" name="Data" placeholder="00/00/0000" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+              </p>
+              <p> 
+                <label>RG</label>
+                <input type="text" name="RG" placeholder="11.111.111-1" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9,A-Z]{1}" required>
+              </p>
+              <p>    
+                <label>CPF</label>
+                <input type="text" name="CPF" placeholder="111.111.111-11" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required>
+              </p>
+              <p>
+              <label for="Gênero">Gênero</label><br>
                 <select class="gen" name="Gênero">
                     <option selected>Selecione</option>
                     <option>Masculino</option>
                     <option>Feminino</option>
-                </select><br><br>      
-            </div>
-            <div class="info">
-                <label>Data de nascimento:</label>
-                <input type="text" name="Data" placeholder="00/00/0000" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
-                <label>RG:</label>
-                <input type="text" name="RG" placeholder="11.111.111-X" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[A-Z]{1}" required>
-                <label>CPF:</label>
-                <input type="text" name="CPF" placeholder="111.111.111-11" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required><br><br>
-            <div class="email">
-                <label>Email:</label>
-                <input type="email" name="Email" placeholder="Email" required>
-                <label for="phone">Celular:</label>
-                <input type="tel" id="celular" name="celular" placeholder="(DDD)91234-5678" pattern="\([0-9]{3}\)[0-9]{5}-[0-9]{4}" required><br><br>
-            </div>
-            <div class="endereço">
-                <label>Endereço:</label>
-                <input type="text" name="End" placeholder="Endereço" required>
-                <label>Número:</label>
-                <input type="text" name="Número" placeholder="Número" pattern="[0-9]{4}" required>
-                <label>Bairro:</label>
-                <input type="text" name="bairro" placeholder="Bairro" required><br><br>
-                <label>Complemento:</label>
-                <input type="text" name="Comp" placeholder="Complemento"><br><br>
-            </div>
-            <div class="cidade">
-                <label>Cidade:</label>
-                <input type="text" name="city" placeholder="Cidade" required>
-                <label for="UF">UF:</label>
+                </select>
+              </p>
+              <p>
+                <label for="phone">Celular</label>
+                <input type="tel" id="celular" name="celular" placeholder="(DDD)91234-5678" pattern="\([0-9]{3}\)[0-9]{5}-[0-9]{4}" required>
+              </p>
+              <p>
+                <label>Cidade</label>
+                <input type="text" name="cidade" placeholder="Cidade" required>
+              </p>
+              <p>
+                <label>CEP</label>
+                <input type="text" name="CEP" placeholder="11111-111" pattern="[0-9]{5}-[0-9]{3}" required>
+              </p>
+              <p>
+                <label for="UF">UF</label>
                 <select class="uf" name="UF">
                     <option selected>Selecione</option>
                     <option>AC</option>
@@ -77,14 +95,28 @@
                     <option>SE</option>
                     <option>SP</option>
                     <option>TO</option>
-                </select>    
-                <label>CEP:</label>
-                <input type="text" name="CEP" placeholder="11.111-111" pattern="[0-9]{2}.[0-9]{3}-[0-9]{3}" required><br><br>
-            </div>
-            <div class="save">
-                <button type="submit">Salvar</button>
-            </div>
-        </form>
-    </div>
+                </select>
+              </p>
+              <p>
+                <label>Endereço</label>
+                <input type="text" name="End" placeholder="Endereço" required>
+              </p>
+              <p>
+                <label>Número</label>
+                <input type="text" name="Número" placeholder="Número" required>
+              </p>
+              <p>
+                <label>Bairro</label>
+                <input type="text" name="bairro" placeholder="Bairro" required>
+              </p>
+              <p>
+                <label>Complemento</label>
+                <input type="text" name="Comp" placeholder="Complemento">
+              </p>
+                <input type="submit" value="Cadastrar"/>
+            </form>
+          </div>
+        </div>
+    </div> 
 </body>
 </html>
