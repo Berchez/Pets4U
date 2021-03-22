@@ -1,5 +1,5 @@
 body {
-    background-image: url("dogs-25.jpg");
+    background-image: url("roxo.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ img{
 
 header,
 .navbar {
-    background-color: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    background-color: #ffffff;
 }
 
 #logo {
@@ -60,7 +60,7 @@ header,
 
 .nav-links li a:hover,
 .navbar-brand:hover {
-    color: #2BD2FF;
+    color: #29d1ff;
 }
 
 .nav-link {
