@@ -15,6 +15,7 @@ header,
 
 #logo {
     width: 100px;
+     margin-left: 10px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-links .form-inline {
