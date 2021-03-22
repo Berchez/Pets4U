@@ -14,20 +14,20 @@ body {
 }
 
 img{
-    padding: 5;
+
 
 }
 
 header,
 .navbar {
-    background-color: #fff;
+    background-color: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
 }
 
 #logo {
-    width: 100px;
+    width: 70px;
 }
 #texto-Pets{
-    font-size: 75px;
+    font-size: 45px;
     font-family: 'Crimson';
     margin-left: 10px;
     color: #26033d;
