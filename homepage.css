@@ -10,26 +10,41 @@ body {
 
 header,
 .navbar {
-    background-color: #066a75;
+    background-color: #fff;
 }
 
 #logo {
     width: 75px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link .form-inline {
+.navbar-expand-lg .navbar-nav .nav-links .form-inline {
     padding: 1rem .8rem;
 }
 
 .navbar-brand,
-.navbar-nav {
+.nav-links {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     color: black;
 }
 
-.navbar-brand:hover,
-.navbar-nav:hover {
-    color: #fff;
+.nav-links {
+    margin: 0 5px;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a:hover,
+.navbar-brand:hover {
+    color: #2BD2FF;
+}
+
+.nav-link {
+    color: black;
 }
 
 input,
