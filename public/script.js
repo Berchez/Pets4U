@@ -13,7 +13,7 @@ pass.addEventListener("keyup", () => {
 let check = () => {
   if (pass.value == passC.value) {
     mesage.innerHTML = "Senhas Iguais";
-    mesage.style.backgroundColor = "rgba(0, 250, 0, 0.6)";
+    mesage.style.backgroundColor = "rgba(11, 156, 49, 0.6)";
     mesage.style.width = "12ch";
   } else {
     mesage.innerHTML = "As senhas diferem";
