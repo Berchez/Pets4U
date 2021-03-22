@@ -1,5 +1,6 @@
 const passC = document.querySelector("#confirmaSenha");
 const pass = document.querySelector("#senha_cad");
+const mesage = document.querySelector("#message");
 
 passC.addEventListener("keyup", () => {
   check();
@@ -10,14 +11,14 @@ pass.addEventListener("keyup", () => {
 });
 
 let check = () => {
-  if (
-    document.getElementById("senha_cad").value ==
-    document.getElementById("confirmaSenha").value
-  ) {
-    document.getElementById("message").style.color = "green";
-    document.getElementById("message").innerHTML = "Senhas Iguais";
+  if (pass.value == passC.value) {
+    mesage.innerHTML = "Senhas Iguais";
+    mesage.style.backgroundColor = "rgba(0, 250, 0, 0.6)";
+    mesage.style.width = "12ch";
   } else {
-    document.getElementById("message").style.color = "red";
-    document.getElementById("message").innerHTML = "As senhas diferem";
+    mesage.innerHTML = "As senhas diferem";
+    mesage.style.width = "15ch";
+    mesage.style.backgroundColor = "rgba(250, 0, 0, 0.6)";
   }
+  mesage.classList.remove("hide");
 };
