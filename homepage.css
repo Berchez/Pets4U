@@ -14,17 +14,23 @@ header,
 }
 
 #logo {
-    width: 75px;
+    width: 100px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-links .form-inline {
     padding: 1rem .8rem;
 }
 
-.navbar-brand,
 .nav-links {
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-family: 'Crimson';
     padding: 0;
     color: black;
 }
