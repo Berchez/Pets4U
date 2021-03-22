@@ -1,0 +1,62 @@
+body {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: #fff;
+}
+
+#logo {
+    width: 100px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-links .form-inline {
+    padding: 1rem .8rem;
+}
+
+.nav-links {
+    font-size: 30px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+
+}
+
+.nav-links {
+    margin: 0 5px;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a:hover,
+.navbar-brand:hover {
+    color: #2BD2FF;
+}
+
+.nav-link {
+    color: #0c001a;
+}
+
+input,
+textarea {
+    padding: 10px;
+    display: block;
+    width: 90%;
+}
