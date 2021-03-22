@@ -1,11 +1,20 @@
 body {
-    background-color: #f0f0f0;
+    background-image: url("dogs-25.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
     color: rgb(0, 0, 0);
 }
 
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+img{
+    padding: 5;
 }
 
 header,
@@ -15,6 +24,12 @@ header,
 
 #logo {
     width: 100px;
+}
+#texto-Pets{
+    font-size: 75px;
+    font-family: 'Crimson';
+    margin-left: 10px;
+    color: #26033d;
 }
 
 .navbar-expand-lg .navbar-nav .nav-links .form-inline {
@@ -29,11 +44,8 @@ header,
 }
 
 .navbar-brand {
-    font-size: 75px;
-    font-family: 'Crimson';
-    padding: 0;
-    color: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
 
+    padding-left: 35px;
 }
 
 .nav-links {
