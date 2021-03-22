@@ -8,7 +8,6 @@
         <title>Registro</title>
         <link rel="stylesheet" href="/styles.css">
         <script src="/mascaras.js"></script>
-        <script src="/script.js"></script>
     </head>
 
     <body>
@@ -29,13 +28,13 @@
                             <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@email.com" />
                         </p>
 
-                        <p>
+                         <p>
                             <label for="senha_cad">Senha</label>
-                            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" onchange='check_pass();' /><br>
+                            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" /><br>
                         </p>
                         <p>
                             <label>Confirmar senha</label>
-                            <input id="confirmaSenha" type="password" name="confirmsenha" placeholder="Confirma Senha" onchange='check_pass();' required>
+                            <input id="confirmaSenha" type="password" name="confirmsenha" placeholder="Confirma Senha"  required>
                             <span id='message'></span>
                         </p>
                         <p>
@@ -125,7 +124,7 @@
                 </div>
             </div>
         </div>
-        
+        <script src="/script.js"></script>
     </body>
 
 </html>
