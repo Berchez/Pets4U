@@ -17,7 +17,8 @@ header,
     width: 100px;
     margin-left: 10px;
 }
-#texto-Pets{
+
+#texto-Pets {
     font-size: 75px;
     font-family: 'Crimson';
     margin-left: 10px;
@@ -53,7 +54,11 @@ header,
 
 .nav-links li a:hover,
 .navbar-brand:hover {
-    color: #2BD2FF;
+    color: #29d1ff;
+    background-color: #cecece;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px gray;
+    text-shadow: 1px 1px 1px gray;
 }
 
 .nav-link {
