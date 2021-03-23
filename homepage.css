@@ -78,3 +78,17 @@ textarea {
 
 
 /*carousel*/
+
+#slides .carousel-inner,
+#slides .carousel-item {
+    height: 90vh;
+}
+
+#slides .carousel-caption {
+    top: 50%;
+    color: black;
+}
+
+#slides .carousel-caption h1 {
+    font-weight: bold;
+}
