@@ -15,7 +15,13 @@ header,
 
 #logo {
     width: 100px;
-     margin-left: 10px;
+    margin-left: 10px;
+}
+#texto-Pets{
+    font-size: 75px;
+    font-family: 'Crimson';
+    margin-left: 10px;
+    color: #26033d;
 }
 
 .navbar-expand-lg .navbar-nav .nav-links .form-inline {
