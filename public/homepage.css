@@ -55,6 +55,7 @@ header,
 
 .nav-links li>a:hover,
 .navbar-brand:hover {
+    cursor: pointer;
     color: #29d1ff;
     background-color: #cecece;
     border-radius: 16px;
