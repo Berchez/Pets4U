@@ -11,6 +11,14 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/funcionario', (req, res) => {
+    res.render('homePageFuncionario.hbs');
+});
+
+router.get('/cadastroProduto', (req, res) => {
+    res.render('cadastroProduto.hbs');
+});
+
 router.get('/register', (req, res) => {
     res.render('register');
 });

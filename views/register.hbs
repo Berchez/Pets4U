@@ -30,16 +30,16 @@
 
                          <p>
                             <label for="senha_cad">Senha</label>
-                            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" /><br>
+                            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" minlength="8"/><br>
                         </p>
                         <p>
                             <label>Confirmar senha</label>
-                            <input id="confirmaSenha" type="password" name="confirmsenha" placeholder="Confirma Senha"  required>
+                            <input id="confirmaSenha" type="password" name="confirmsenha" placeholder="Confirma Senha"  minlength="8" required>
                             <span class="hide" id='message'></span>
                         </p>
                         <p>
                             <label>Data de nascimento</label>
-                            <input type="text" name="Data" placeholder="00/00/0000" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" onkeydown="javascript: fMasc( this, mNasc );" maxlength="10" required>
+                            <input type="text" name="Data" placeholder="00/00/0000" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" onkeydown="javascript: fMasc( this, mData );" maxlength="10" required>
                         </p>
                         <p>
                             <label>RG</label>
