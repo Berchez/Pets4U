@@ -3,6 +3,9 @@ body {
     color: rgb(0, 0, 0);
 }
 
+
+/*navbar*/
+
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
@@ -34,6 +37,8 @@ header,
     font-family: 'Crimson';
     padding: 0;
     color: black;
+    margin: 0 5px;
+    display: flex;
 }
 
 .navbar-brand {
@@ -43,9 +48,8 @@ header,
     color: black;
 }
 
-.nav-links {
-    margin: 0 5px;
-    display: flex;
+#navbar-links {
+    margin-left: 760px;
 }
 
 .nav-links li {
@@ -71,3 +75,6 @@ textarea {
     display: block;
     width: 90%;
 }
+
+
+/*carousel*/
