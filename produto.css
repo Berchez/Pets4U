@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial;
+}
+
+input,label{
+    display: block;
+    width: 100%;
+    outline: none;
+}
+body{
+    padding-top: 5vh;
+    background-image:url(img/pet.jpg);
+    background-size: cover;
+}
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+}
+
+#main-container h1{
+    text-align:center;
+    margin-bottom: 25px;
+    color: #490675;
+}
+
+form{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.fullbox{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex:1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    color: #490675
+}
+
+input{
+    padding: 10px;
+    margin-bottom:25px;
+    font-size: .9rem;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    background-color:#490675;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right,  rgb(36, 2, 33), rgb(36, 2, 33));
+  }
