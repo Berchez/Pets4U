@@ -25,7 +25,7 @@ header,
 #texto-Pets {
     font-size: 45px;
     font-family: 'Crimson';
-    margin-left: 10px;
+    margin-left: 25px;
     color: #26033d;
 }
 
@@ -40,7 +40,7 @@ header,
     color: black;
 }
 
-.navbar-brand {
+.navbar-brand-img {
     padding-left: 35px;
 }
 
@@ -53,9 +53,9 @@ header,
     display: inline-block;
 }
 
-.nav-links li a:hover,
+.nav-links li>a:hover,
 .navbar-brand:hover {
-    color: #29d1ff;
+    color: #9a6fff;
     background-color: #cecece;
     border-radius: 16px;
     box-shadow: 0px 0px 3px gray;
