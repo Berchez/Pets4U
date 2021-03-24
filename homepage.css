@@ -28,6 +28,13 @@ header,
     color: #26033d;
 }
 
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
 .nav-links {
     font-size: 30px;
     font-family: 'Crimson';
@@ -35,13 +42,6 @@ header,
     color: black;
     margin: 0 5px;
     display: flex;
-}
-
-.navbar-brand {
-    font-size: 75px;
-    font-family: 'Crimson';
-    padding: 0;
-    color: black;
 }
 
 .nav-links li {
