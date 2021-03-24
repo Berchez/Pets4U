@@ -73,6 +73,7 @@ p {
 
 .nav-links li a:hover,
 .navbar-brand:hover {
+    cursor: pointer;
     color: #29d1ff;
     background-color: #0000001e;
     border-radius: 16px;
@@ -82,6 +83,7 @@ p {
 
 .sticky .nav-links li a:hover,
 .navbar-brand:hover {
+    cursor: pointer;
     color: #29d1ff;
     background-color: #cecece;
     border-radius: 16px;
