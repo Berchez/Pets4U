@@ -1,12 +1,10 @@
 body {
-    background-image: url("dogs-25.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-top: 40px;
+    background-color: #f0f0f0;
     color: rgb(0, 0, 0);
 }
+
+
+/*navbar*/
 
 #nav-container {
     padding-top: 0;
@@ -15,22 +13,27 @@ body {
 
 header,
 .navbar {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 #logo {
-    width: 70px;
+    width: 80px;
+    margin-left: 5%;
 }
 
 #texto-Pets {
-    font-size: 45px;
+    font-size: 55px;
     font-family: 'Crimson';
-    margin-left: 25px;
+    margin-left: 10px;
     color: #26033d;
+    text-decoration: underline rgb(103, 143, 255);
 }
 
-.navbar-expand-lg .navbar-nav .nav-links .form-inline {
-    padding: 1rem .8rem;
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
 }
 
 .nav-links {
@@ -38,13 +41,6 @@ header,
     font-family: 'Crimson';
     padding: 0;
     color: black;
-}
-
-.navbar-brand-img {
-    padding-left: 35px;
-}
-
-.nav-links {
     margin: 0 5px;
     display: flex;
 }
@@ -53,9 +49,8 @@ header,
     display: inline-block;
 }
 
-.nav-links li>a:hover,
+.nav-links li a:hover,
 .navbar-brand:hover {
-    cursor: pointer;
     color: #29d1ff;
     background-color: #cecece;
     border-radius: 16px;
@@ -64,7 +59,7 @@ header,
 }
 
 .nav-link {
-    color: #0c001a;
+    color: black;
 }
 
 input,
@@ -72,4 +67,21 @@ textarea {
     padding: 10px;
     display: block;
     width: 90%;
+}
+
+
+/*carousel*/
+
+#slides .carousel-inner,
+#slides .carousel-item {
+    height: 90vh;
+}
+
+#slides .carousel-caption {
+    top: 50%;
+    color: black;
+}
+
+#slides .carousel-caption h1 {
+    font-weight: bold;
 }
