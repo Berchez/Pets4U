@@ -28,10 +28,6 @@ header,
     color: #26033d;
 }
 
-.navbar-expand-lg .navbar-nav .nav-links .form-inline {
-    padding: 1rem .8rem;
-}
-
 .nav-links {
     font-size: 30px;
     font-family: 'Crimson';
@@ -46,10 +42,6 @@ header,
     font-family: 'Crimson';
     padding: 0;
     color: black;
-}
-
-#navbar-links {
-    margin-left: 760px;
 }
 
 .nav-links li {
