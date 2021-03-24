@@ -13,6 +13,11 @@ body {
 
 header,
 .navbar {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+header,
+.sticky {
     background-color: #fff;
 }
 
@@ -40,6 +45,12 @@ header,
     text-decoration: underline rgb(103, 143, 255);
 }
 
+.navbar-brand,
+p {
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px gray;
+}
+
 .navbar-brand {
     font-size: 75px;
     font-family: 'Crimson';
@@ -61,6 +72,15 @@ header,
 }
 
 .nav-links li a:hover,
+.navbar-brand:hover {
+    color: #29d1ff;
+    background-color: #0000001e;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px gray;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.sticky .nav-links li a:hover,
 .navbar-brand:hover {
     color: #29d1ff;
     background-color: #cecece;
