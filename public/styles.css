@@ -227,3 +227,7 @@ button {
 .hide {
     display: none !important;
 }
+
+#botao {
+    cursor: pointer;
+}
