@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
     background-color: #f0f0f0;
     color: rgb(0, 0, 0);
@@ -26,22 +27,23 @@ header,
     margin-left: 5%;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     #texto-Pets {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
-@media screen and (min-width: 351px) {
+@media screen and (min-width: 451px) {
     #texto-Pets {
         font-size: 55px;
+        margin-left: 15%;
     }
 }
 
 #texto-Pets {
-    font-family: 'Crimson';
-    margin-left: 15%;
-    color: #26033d;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: #370558;
     text-decoration: underline rgb(103, 143, 255);
 }
 
@@ -56,6 +58,18 @@ p {
     font-family: 'Crimson';
     padding: 0;
     color: black;
+}
+
+@media screen and (max-width: 584px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    p {
+        font-size: 30px;
+    }
 }
 
 .nav-links {

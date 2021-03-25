@@ -4,7 +4,7 @@ const mysql = require("mysql");
 const dotenv = require('dotenv');
 const cookieParser = require("cookie-parser");
 
-dotenv.config({ path:'./.env'});
+dotenv.config({ path: './.env' });
 
 console.log(__dirname);
 
@@ -30,9 +30,9 @@ app.use(cookieParser());
 app.set('view engine', 'hbs');
 
 db.connect((error) => {
-    if(error){
+    if (error) {
         console.log(error);
-    }else{
+    } else {
         console.log("MYSQL Connected...");
     }
 })
@@ -41,6 +41,6 @@ db.connect((error) => {
 app.use('/', require('./routes/pages.js'));
 app.use('/auth', require('./routes/auth'));
 
-app.listen(5000, () => {
+app.listen(8080, () => {
     console.log("Server started on Port 5000");
 });

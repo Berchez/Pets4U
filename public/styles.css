@@ -1,239 +1,229 @@
 body {
-  background-image: url("/dogs-25.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-image: url("/dogs-25.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .card {
-  box-shadow: 1px 1px 5px #ccc;
-  background-color: white;
-  padding: 30px;
-  border-radius: 20px;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .form {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
 }
 
 .card-top {
-  text-align: center;
+    text-align: center;
 }
 
-
 .imglogin {
-  width: 200px;
+    width: 200px;
 }
 
 .title {
-  color: #26033d;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+    color: #26033d;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.card-group > label {
-  width: 100%;
-  color: rgb(75, 75, 75);
-  display: block;
+.card-group>label {
+    width: 100%;
+    color: rgb(75, 75, 75);
+    display: block;
 }
 
-.card-group > input {
-  border-radius: 5px;
-  outline: 0;
-  width: 100%;
-  height: 25px;
-  padding: 5px;
+.card-group>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
 }
 
 .card-group {
-  margin-bottom: 17px;
+    margin-bottom: 17px;
 }
 
-.card-group > button {
-  background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-  width: 100%;
-  border-radius: 30px;
-  padding: 10px;
-  border: 0px;
-  color: white;
-  outline: 0;
+.card-group>button {
+    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    outline: 0;
 }
 
 .btn button:hover {
-  background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
 }
 
 .gen {
-  color: #490675;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  height: 37px;
-  width: 100%;
-  border: 1px solid #b2b2b2;
-  border-radius: 3px;
-  outline: none;
+    color: #490675;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 37px;
+    width: 100%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    outline: none;
 }
 
 .uf {
-  color: #3a055e;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  height: 37px;
-  width: 100%;
-  border: 1px solid #b2b2b2;
-  border-radius: 3px;
-  outline: none;
+    color: #3a055e;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 37px;
+    width: 100%;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    outline: none;
 }
+
 
 /* CSS reset */
 
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
 
 /* content que contem os formulários */
 
 .content {
-  width: 500px;
-  margin: 0px auto;
-  position: relative;
-  border-radius: 3px;
+    width: 500px;
+    margin: 0px auto;
+    position: relative;
+    border-radius: 3px;
 }
+
 
 /* formatando o cabeçalho dos formulários */
 
 h1 {
-  font-size: 48px;
-  color: #490675;
-  padding: 10px 0;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 30px;
+    font-size: 48px;
+    color: #490675;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 h1:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 10px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
-  background: linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+    background: linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
 }
 
 p {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 label {
-  color: #534060;
-  position: relative;
+    color: #534060;
+    position: relative;
 }
 
 ::-webkit-input-placeholder {
-  color: #bebcbc;
-  font-style: italic;
+    color: #bebcbc;
+    font-style: italic;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #bebcbc;
-  font-style: italic;
+    color: #bebcbc;
+    font-style: italic;
 }
 
 input {
-  outline: none;
+    outline: none;
 }
 
 input:not([type="checkbox"]) {
-  width: 95%;
-  margin-top: 4px;
-  padding: 10px;
-  border: 1px solid #b2b2b2;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #b2b2b2;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
 }
+
 
 /*estilo do botão submit */
 
 input[type="submit"] {
-  background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-  width: 100%;
-  border-radius: 30px;
-  padding: 10px;
-  border: 0px;
-  color: white;
-  outline: 0;
+    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    outline: 0;
 }
 
 input[type="submit"]:hover {
-  background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
+    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
 }
 
 #cadastro {
-  position: relative;
-  top: 0px;
-  width: 88%;
-  padding: 18px 6% 60px 6%;
-  margin: 20px 0 20px 0;
-  background: rgb(247, 247, 247);
-  border: 1px solid rgba(147, 184, 189, 0.8);
-  border-radius: 30px;
+    position: relative;
+    top: 0px;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 20px 0 20px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189, 0.8);
+    border-radius: 30px;
 }
 
 button {
-  background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-  width: 30%;
-  border-radius: 30px;
-  padding: 10px;
-  border: 0px;
-  color: white;
-  outline: 0;
+    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    width: 30%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    outline: 0;
 }
 
 #message {
-  display: block;
-  max-width: 15ch;
-  background-color: rgba(250, 0, 0, 0.6);
-  border: 3px solid white;
-  margin-top: 10px;
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0px 0px 3px gray;
-  text-shadow: 1px 1px 3px black;
+    display: block;
+    max-width: 15ch;
+    background-color: rgba(250, 0, 0, 0.6);
+    border: 3px solid white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 3px gray;
+    text-shadow: 1px 1px 3px black;
 }
 
 .hide {
-  display: none !important;
+    display: none !important;
 }
