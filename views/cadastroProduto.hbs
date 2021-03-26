@@ -16,7 +16,7 @@
         <div class="content">
             <div id="cadastro">
                 <h1>Cadastrar Produto</h1>
-                <form id="registerform">
+                <form action="/auth/cadastroProduto" method="post">
                     <p>
                         <label for="name">Nome</label>
                         <input type="text" name="name" id="name" placeholder="Digite o nome do produto" required>
@@ -29,12 +29,12 @@
 
                     <p>
                         <label for="cod">Código do produto</label>
-                        <input type="number" name="cod" id="cod" placeholder="Digite o código do produto" min="0" required>
+                        <input type="number" name="Cod" id="Cod" placeholder="Digite o código do produto" min="0" required>
                     </p>   
 
                     <p>
                         <label for="Marca">Marca</label>
-                        <input type="text" name="name" id="name" placeholder="Digite a Marca do produto" required>
+                        <input type="text" name="Marca" id="Marca" placeholder="Digite a Marca do produto" required>
                     </p>
                         
                     <p>
@@ -64,6 +64,6 @@
         </div>
     </div>
     <script src="/script.js"></script>
-</body>
+</body> 
 
 </html>
