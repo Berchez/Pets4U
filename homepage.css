@@ -200,11 +200,24 @@
     
     div.container2 div.row {
         left: 20%;
+        width: 70vw;
         position: relative;
+        overflow: hidden;
+    }
+    
+    @media screen and (max-width: 767px) {
+        #area-marcas {
+            background: url(img/paralaxMobile.jpg);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        #area-marcas {
+            background: url(img/gato.jpg);
+        }
     }
     
     #area-marcas {
-        background: url(img/gato.jpg);
         background-attachment: fixed;
     }
     
