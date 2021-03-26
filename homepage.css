@@ -133,46 +133,127 @@
         width: 100%;
         height: 100%;
     }
-    /*Daqui pra baixo a Bruna que fez */
-
+    /*Sobre a Pets4U */
+    
     #about-area {
-        background-color: #F9F9F9; }
-    .main-title { color: #444;
-            margin: 50px 0 75px 0;
-            font-size: 40px;
-            text-align: center;
-        }
+        background-color: #F9F9F9;
+    }
+    
+    .main-title {
+        color: #444;
+        margin: 50px 0 75px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+    
     .main-title::after {
-            content:"";
-            border-top: 2px solid #333;
-            width: 15%;
-            position:absolute;
-            top: 100px; 
-            left: 42.5%; } 
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 100px;
+        left: 42.5%;
+    }
+    
     .about-title {
-                font-size: 17px;
-                color: #444;
-                text-transform: uppercase;
-                font-weight: bold; 
+        font-size: 17px;
+        color: #444;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     
     #about-list {
         list-style: none;
         padding-left: 0;
     }
-
+    
     #about-list li {
         margin-top: 5px;
         line-height: 30px;
     }
+    
     #about-list i {
         color: #29d1ff;
         margin-right: 15px;
     }
+    
     .img-fluid {
         border-radius: 10px;
     }
-
-
-
-
+    /*Marcas*/
+    
+    .marcas-title {
+        color: white;
+        margin: 50px 0 75px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .marcas-title::after {
+        content: "";
+        border-top: 2px solid white;
+        width: 20%;
+        position: absolute;
+        top: 100px;
+        left: 40%;
+    }
+    
+    div.container2 div.row {
+        left: 20%;
+        position: relative;
+    }
+    
+    #area-marcas {
+        background: url(img/gato.jpg);
+        background-attachment: fixed;
+    }
+    
+    #whiskas {
+        width: 300px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #society {
+        width: 200px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #pedigree {
+        width: 250px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #bayer {
+        width: 150px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #secao {
+        width: 150px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #nd {
+        width: 150px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #premier {
+        width: 300px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #ferplast {
+        width: 150px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #jambo {
+        width: 200px;
+        margin: 50px 20px 10px 20px;
+    }
+    
+    #wines {
+        height: 1000px;
+        background-color: #F9F9F9
+    }
