@@ -11,21 +11,19 @@ const db = mysql.createConnection({
 
 exports.login = async (req,res) => {
     try {
-        const {senha, email} = req.body;
+        const {email, senha} = req.body;
         console.log(`Email: ${email}\nSenha: ${senha}`)
         if(!email || !senha) {
-            return res.status(400).render('login', {
-                message: 'Coloque o email e senha'
-            })
+            return res.status(400).render('login')
         }
 
         db.query('SELECT * FROM usuarios WHERE email = ?', [email], async (error, results) => {
+            if(error) {
+                console.log(error);
+            }
             console.log(results);
-            console.log(error);
-            if( !results || !(await bcrypt.compare(senha, results[0].senha))) {
-                res.status(401).render('login', {
-                    message: 'Email ou senha incorretos'
-                })
+            if(!results || !(await bcrypt.compare(senha, results[0].Senha))) {
+                res.status(401).render('login');
             }
             else {
                 const id = results[0].id;
@@ -80,7 +78,7 @@ exports.register = (req, res) => {
         let hashsenha = await bcrypt.hash(senha_cad, 8);
         console.log(hashsenha);
 
-        db.query('INSERT INTO usuarios SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Gênero: Gênero, Celular: celular, Endereço: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
+        db.query('INSERT INTO usuarios SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Genero: Gênero, Celular: celular, Endereco: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
             if(error) {
                 console.log(error);
             } else {
