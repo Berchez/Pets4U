@@ -100,47 +100,56 @@ exports.cadastroProduto = (req, res) => {
     db.query('SELECT id_produto FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
         if(error) {
             console.log(error);
+            return res.redirect('/');
         }
 
         if(results.length > 0) {
             db.query('INSERT INTO validade SET ?', {Id_Produto: Cod, Data_Validade: data, Quantidade: qtd}, (error, results) => {
                 if(error) {
                     console.log(error);
+                    return res.redirect('/');
                 } else {
-                    db.query('SELECT quantidade FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
-                        let x = parseInt(results);
-                        let y = parseInt(qtd);
-                        let qtd_nova = x + y;
-                        console.log(results);
+                    db.query('SELECT quantidade_total FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
+                        if(error) {
+                            console.log(error);
+                        }
+                        for(var i in results) {
+                            var quantidade_produto = results[i].quantidade_total;
+                            console.log(quantidade_produto);
+                        }
+                        console.log(quantidade_produto);
+                        var quantidade_insercao = qtd;
                         console.log(qtd);
-                        console.log(name);
-                        console.log(x);
-                        console.log(y);
-                        console.log(qtd_nova);
-                        db.query('UPDATE produto SET quantidade_total = [results] WHERE id_produto = [Cod]', async (error, results) => {
+                        console.log(quantidade_insercao);
+                        var quantidade_nova = parseInt(quantidade_produto) + parseInt(quantidade_insercao);
+                        console.log(quantidade_nova);
+                        db.query('UPDATE produto SET quantidade_total = ? WHERE id_produto = ?', [quantidade_nova, Cod], async (error, results) => {
                             if(error) {
                                 console.log(error);
+                                return res.redirect('/');
                             }
+                            console.log('Produto Cadastrado com Sucesso');
+                            console.log(results);
+                            return res.redirect('/cadastroProduto');
                         })
                     })
-                    console.log('Produto Cadastrado com Sucesso');
-                    console.log(results);
-                    return res.redirect('/cadastroProduto');
                 }
             })
         } else{
             db.query('INSERT INTO produto SET ?', {Id_Produto: Cod, Nome: name, Marca: Marca, Fornecedor: fornecedor, Preco_Unidade: price, Quantidade_Total: qtd, Descricao: descrição}, (error, results) => {
                 if(error) {
                     console.log(error);
+                    return res.redirect('/');
                 } else {
                     db.query('INSERT INTO validade SET ?', {Id_Produto: Cod, Data_Validade: data, Quantidade: qtd}, (error, results) => {
                         if(error) {
                             console.log(error);
+                            return res.redirect('/');
                         }
+                        console.log('Produto Cadastrado com Sucesso');
+                        console.log(results);
+                        return res.redirect('/cadastroProduto');
                     })
-                    console.log('Produto Cadastrado com Sucesso');
-                    console.log(results);
-                    return res.redirect('/cadastroProduto');
                 }
             })
         }
