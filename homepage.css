@@ -198,11 +198,9 @@
         left: 40%;
     }
     
-    div.container2 div.row {
-        left: 20%;
-        width: 70vw;
-        position: relative;
-        overflow: hidden;
+    .img-center {
+        display: block;
+        margin: 0 auto;
     }
     
     @media screen and (max-width: 767px) {
@@ -222,48 +220,40 @@
     }
     
     #whiskas {
-        width: 300px;
-        margin: 10px 20px 10px 20px;
+        width: 325px;
     }
     
     #society {
         width: 200px;
-        margin: 10px 20px 10px 20px;
     }
     
     #pedigree {
         width: 250px;
-        margin: 10px 20px 10px 20px;
     }
     
     #bayer {
         width: 150px;
-        margin: 10px 20px 10px 20px;
     }
     
     #secao {
         width: 150px;
-        margin: 10px 20px 10px 20px;
     }
     
     #nd {
         width: 150px;
-        margin: 10px 20px 10px 20px;
     }
     
     #premier {
         width: 300px;
-        margin: 10px 20px 10px 20px;
     }
     
     #ferplast {
         width: 150px;
-        margin: 10px 20px 10px 20px;
     }
     
     #jambo {
         width: 200px;
-        margin: 50px 20px 10px 20px;
+        margin-top: 50px;
     }
     
     #wines {
