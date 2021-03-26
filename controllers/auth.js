@@ -11,21 +11,19 @@ const db = mysql.createConnection({
 
 exports.login = async (req,res) => {
     try {
-        const {senha, email} = req.body;
+        const {email, senha} = req.body;
         console.log(`Email: ${email}\nSenha: ${senha}`)
         if(!email || !senha) {
-            return res.status(400).render('login', {
-                message: 'Coloque o email e senha'
-            })
+            return res.status(400).render('login')
         }
 
         db.query('SELECT * FROM usuarios WHERE email = ?', [email], async (error, results) => {
+            if(error) {
+                console.log(error);
+            }
             console.log(results);
-            console.log(error);
-            if( !results || !(await bcrypt.compare(senha, results[0].senha))) {
-                res.status(401).render('login', {
-                    message: 'Email ou senha incorretos'
-                })
+            if(!results || !(await bcrypt.compare(senha, results[0].Senha))) {
+                res.status(401).render('login');
             }
             else {
                 const id = results[0].id;
@@ -80,7 +78,7 @@ exports.register = (req, res) => {
         let hashsenha = await bcrypt.hash(senha_cad, 8);
         console.log(hashsenha);
 
-        db.query('INSERT INTO usuarios SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Gênero: Gênero, Celular: celular, Endereço: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
+        db.query('INSERT INTO usuarios SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Genero: Gênero, Celular: celular, Endereco: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
             if(error) {
                 console.log(error);
             } else {
@@ -100,47 +98,51 @@ exports.cadastroProduto = (req, res) => {
     db.query('SELECT id_produto FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
         if(error) {
             console.log(error);
+            return res.redirect('/');
         }
 
         if(results.length > 0) {
             db.query('INSERT INTO validade SET ?', {Id_Produto: Cod, Data_Validade: data, Quantidade: qtd}, (error, results) => {
                 if(error) {
                     console.log(error);
+                    return res.redirect('/');
                 } else {
-                    db.query('SELECT quantidade FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
-                        let x = parseInt(results);
-                        let y = parseInt(qtd);
-                        let qtd_nova = x + y;
-                        console.log(results);
-                        console.log(qtd);
-                        console.log(name);
-                        console.log(x);
-                        console.log(y);
-                        console.log(qtd_nova);
-                        db.query('UPDATE produto SET quantidade_total = [results] WHERE id_produto = [Cod]', async (error, results) => {
+                    db.query('SELECT quantidade_total FROM produto WHERE id_produto = ?', [Cod], async (error, results) => {
+                        if(error) {
+                            console.log(error);
+                        }
+                        for(var i in results) {
+                            var quantidade_produto = results[i].quantidade_total;
+                        }
+                        var quantidade_insercao = qtd;
+                        var quantidade_nova = parseInt(quantidade_produto) + parseInt(quantidade_insercao);
+                        db.query('UPDATE produto SET quantidade_total = ? WHERE id_produto = ?', [quantidade_nova, Cod], async (error, results) => {
                             if(error) {
                                 console.log(error);
+                                return res.redirect('/');
                             }
+                            console.log('Produto Cadastrado com Sucesso');
+                            console.log(results);
+                            return res.redirect('/cadastroProduto');
                         })
                     })
-                    console.log('Produto Cadastrado com Sucesso');
-                    console.log(results);
-                    return res.redirect('/cadastroProduto');
                 }
             })
         } else{
             db.query('INSERT INTO produto SET ?', {Id_Produto: Cod, Nome: name, Marca: Marca, Fornecedor: fornecedor, Preco_Unidade: price, Quantidade_Total: qtd, Descricao: descrição}, (error, results) => {
                 if(error) {
                     console.log(error);
+                    return res.redirect('/');
                 } else {
                     db.query('INSERT INTO validade SET ?', {Id_Produto: Cod, Data_Validade: data, Quantidade: qtd}, (error, results) => {
                         if(error) {
                             console.log(error);
+                            return res.redirect('/');
                         }
+                        console.log('Produto Cadastrado com Sucesso');
+                        console.log(results);
+                        return res.redirect('/cadastroProduto');
                     })
-                    console.log('Produto Cadastrado com Sucesso');
-                    console.log(results);
-                    return res.redirect('/cadastroProduto');
                 }
             })
         }
