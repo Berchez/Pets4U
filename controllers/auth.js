@@ -115,14 +115,9 @@ exports.cadastroProduto = (req, res) => {
                         }
                         for(var i in results) {
                             var quantidade_produto = results[i].quantidade_total;
-                            console.log(quantidade_produto);
                         }
-                        console.log(quantidade_produto);
                         var quantidade_insercao = qtd;
-                        console.log(qtd);
-                        console.log(quantidade_insercao);
                         var quantidade_nova = parseInt(quantidade_produto) + parseInt(quantidade_insercao);
-                        console.log(quantidade_nova);
                         db.query('UPDATE produto SET quantidade_total = ? WHERE id_produto = ?', [quantidade_nova, Cod], async (error, results) => {
                             if(error) {
                                 console.log(error);
