@@ -260,3 +260,7 @@
         height: 1000px;
         background-color: #F9F9F9
     }
+
+    .card-body {
+        text-align: center;
+    }
