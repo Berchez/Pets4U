@@ -255,12 +255,24 @@
         width: 200px;
         margin-top: 50px;
     }
+    /*produtos*/
     
-    #wines {
-        height: 1000px;
-        background-color: #F9F9F9
-    }
-
     .card-body {
         text-align: center;
+    }
+    
+    .card-link {
+        font-size: 25px;
+        font-family: 'Crimson';
+        padding: 0;
+        color: black;
+        display: block;
+    }
+    
+    .card-link:hover {
+        color: black;
+        background-color: rgba(29, 198, 240, 0.432);
+        border-radius: 16px;
+        box-shadow: 0px 0px 3px black;
+        text-shadow: 1px 1px 1px white;
     }
