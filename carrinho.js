@@ -1,1 +1,1 @@
-let carts = document.querySelectorAll()
+let carts = document.querySelectorAll("")
