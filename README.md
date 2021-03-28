@@ -23,7 +23,7 @@
 
 ---
 
-### :books: Tabela de Conteúdos
+### -:books: Tabela de Conteúdos
 
 - [Descrição](#Descrição)
 - [Como Usar](#Como-Usar)
@@ -32,11 +32,11 @@
 
 ---
 
-## :page_with_curl: Descrição
+## -:page_with_curl: Descrição
 
 Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços online pode ser muito menos lucrativo. Então potencialize seus números de vendas com a Pets4U, venda seus produtos e ofereça online. O número de possíveis clientes aumentará muito.
 
-#### :technologist: Tecnologias
+#### -:technologist: Tecnologias
 
 - <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/> - JavaScript 
 - <img height="32" width="32" src="https://user-images.githubusercontent.com/50505615/112754539-e2fb4200-8fb2-11eb-8c4b-91a1cb676a31.png"/> - HandleBars
@@ -46,14 +46,14 @@ Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços onlin
 
 ---
 
-## Como Usar
+## -:man_teacher: Como Usar
 
-#### Instalação
+#### -:teacher:Instalação
 
 
 ---
 
-## :blue_book: Licensa
+## -:blue_book: Licensa
 
 MIT License
 
@@ -69,7 +69,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-## :raising_hand_man: Colaboradores
+## -:raising_hand_man: Colaboradores
 
 - Walter
 - Bruna
