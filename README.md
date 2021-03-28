@@ -16,6 +16,8 @@
 
 <span style="display:block;text-align:center">![Screenshot from 2021-03-28 10-52-06](https://user-images.githubusercontent.com/50505615/112754716-b85db900-8fb3-11eb-834b-9fb58e34a2e9.png)</span>
 
+---
+
 
 > Esta é uma aplicação que busca criar um ecommerce funcional para um PetShop.
 
