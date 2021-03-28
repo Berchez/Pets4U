@@ -71,6 +71,52 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## -:raising_hand_man: Colaboradores
 
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/gtoma55">
+        <img src="https://user-images.githubusercontent.com/50505615/112755700-3e7bfe80-8fb8-11eb-8cf0-e7ff538764aa.jpeg" width="100px;" alt="Foto do Gabriel Takahiro"/><br>
+        <sub>
+          <b>Gabriel Toma</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/brunafalcucci">
+        <img src="https://user-images.githubusercontent.com/50505615/112755762-8d299880-8fb8-11eb-94ef-d44f74066305.jpeg" width="100px;" alt="Foto da Bruna"/><br>
+        <sub>
+          <b>Bruna Falcucci</b>
+        </sub>
+      </a><br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Berchez">
+        <img src="https://user-images.githubusercontent.com/50505615/112755803-b64a2900-8fb8-11eb-9dee-f984d7e5eae5.jpeg" width="100px;" alt="Foto do Walter Berchez no GitHub"/><br>
+        <sub>
+          <b>Walter Berchez</b>
+        </sub>
+      </a><br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Murilo1234567">
+        <img src="https://user-images.githubusercontent.com/50505615/112755846-eabde500-8fb8-11eb-8462-0eebd6074441.jpeg" width="100px;" alt="Foto do Murilo"/><br>
+        <sub>
+          <b>Murilo Moraes</b>
+        </sub>
+      </a><br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/R50UZ4">
+        <img src="https://user-images.githubusercontent.com/50505615/112755918-32dd0780-8fb9-11eb-961e-b17790c5a145.jpeg" width="100px;" alt="Foto da Renê Souza"/><br>
+        <sub>
+          <b>Renê Souza</b>
+        </sub>
+      </a><br>
+    </td>
+  </tr>
+</table>
+
 - Walter
 - Bruna
 - Renê
