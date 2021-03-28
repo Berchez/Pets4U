@@ -75,7 +75,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   <tr>
     <td align="center">
       <a href="https://github.com/gtoma55">
-        <img src="https://user-images.githubusercontent.com/50505615/112765938-e0661000-8fe5-11eb-831c-7df3cd37be7e.jpeg" width="100px;" heigth="50"; alt="Foto do Gabriel Takahiro"/><br>
+        <img height="105;" width="100px;"  src="https://user-images.githubusercontent.com/50505615/112765938-e0661000-8fe5-11eb-831c-7df3cd37be7e.jpeg" alt="Foto do Gabriel Takahiro"/><br>
         <sub>
           <b>Gabriel Toma</b>
         </sub>
@@ -107,7 +107,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </td>
     <td align="center">
       <a href="https://github.com/R50UZ4">
-        <img height="80" width="100" src="https://user-images.githubusercontent.com/50505615/112755918-32dd0780-8fb9-11eb-961e-b17790c5a145.jpeg" alt="Foto da Renê Souza"/><br>
+        <img width="100" src="https://user-images.githubusercontent.com/50505615/112755918-32dd0780-8fb9-11eb-961e-b17790c5a145.jpeg" alt="Foto da Renê Souza"/><br>
         <sub>
           <b>Renê Souza</b>
         </sub>
