@@ -1,8 +1,8 @@
-# :dog2::cat2: Pets4U
+# :dog2: Pets4U :cat2:
 
 ---
 
-## :desktop_computer: Desktop
+## -:desktop_computer: Desktop
 
 ![Screenshot from 2021-03-28 10-53-23](https://user-images.githubusercontent.com/50505615/112754756-dc20ff00-8fb3-11eb-8442-dc71ed747ffc.png)
 
@@ -10,7 +10,7 @@
 
 ---
 
-## :iphone: Mobile
+## -:iphone: Mobile
 
 <span style="display:block;text-align:center">![Screenshot from 2021-03-28 10-17-36](https://user-images.githubusercontent.com/50505615/112753789-85192b00-8faf-11eb-90b4-1cbe2f643e50.png)</span>
 
@@ -41,7 +41,7 @@ Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços onlin
 - <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/> - JavaScript 
 - <img height="32" width="32" src="https://user-images.githubusercontent.com/50505615/112754539-e2fb4200-8fb2-11eb-8c4b-91a1cb676a31.png"/> - HandleBars
 - <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/> - JavaScript 
-- <img height="32" width="64" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/"/> - HTML & CSS
+- <img height="32" width="64" src="https://user-images.githubusercontent.com/50505615/112755301-72eebb00-8fb6-11eb-9e59-16777c39af13.png"/> - HTML & CSS
 - <img height="32" width="32" src="https://miro.medium.com/max/1206/1*KWBfLD6aEEHNWyuYmL2CVw.png"/> - BootStrap
 
 ---
