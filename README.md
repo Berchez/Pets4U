@@ -75,7 +75,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   <tr>
     <td align="center">
       <a href="https://github.com/gtoma55">
-        <img src="https://user-images.githubusercontent.com/50505615/112765938-e0661000-8fe5-11eb-831c-7df3cd37be7e.jpeg" width="80px;" alt="Foto do Gabriel Takahiro"/><br>
+        <img src="https://user-images.githubusercontent.com/50505615/112765938-e0661000-8fe5-11eb-831c-7df3cd37be7e.jpeg" width="100px;" heigth="80"; alt="Foto do Gabriel Takahiro"/><br>
         <sub>
           <b>Gabriel Toma</b>
         </sub>
