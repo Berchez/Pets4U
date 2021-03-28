@@ -117,10 +117,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   </tr>
 </table>
 
-- Walter
-- Bruna
-- Renê
-- Murilo
-- Takahiro
-
 > [De Volta Pra Cima](#Pets4U)
