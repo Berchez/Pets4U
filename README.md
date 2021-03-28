@@ -107,7 +107,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </td>
     <td align="center">
       <a href="https://github.com/R50UZ4">
-        <img src="https://user-images.githubusercontent.com/50505615/112755918-32dd0780-8fb9-11eb-961e-b17790c5a145.jpeg" width="100px;" alt="Foto da Renê Souza"/><br>
+        <img height="80" width="100" src="https://user-images.githubusercontent.com/50505615/112755918-32dd0780-8fb9-11eb-961e-b17790c5a145.jpeg" alt="Foto da Renê Souza"/><br>
         <sub>
           <b>Renê Souza</b>
         </sub>
