@@ -40,8 +40,8 @@ Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços onlin
 
 - <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/> - JavaScript 
 - <img height="32" width="32" src="https://user-images.githubusercontent.com/50505615/112754539-e2fb4200-8fb2-11eb-8c4b-91a1cb676a31.png"/> - HandleBars
-- <img height="32" width="64" src="https://user-images.githubusercontent.com/50505615/112755301-72eebb00-8fb6-11eb-9e59-16777c39af13.png"/> - HTML & CSS
 - <img height="32" width="32" src="https://miro.medium.com/max/1206/1*KWBfLD6aEEHNWyuYmL2CVw.png"/> - BootStrap
+- <img height="32" width="64" src="https://user-images.githubusercontent.com/50505615/112755301-72eebb00-8fb6-11eb-9e59-16777c39af13.png"/> - HTML & CSS
 
 ---
 
