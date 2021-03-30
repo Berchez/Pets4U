@@ -217,7 +217,7 @@
     
     #area-marcas {
         background-attachment: fixed;
-    }
+    } 
     
     #whiskas {
         width: 325px;
@@ -279,4 +279,11 @@
         border-radius: 16px;
         box-shadow: 0px 0px 3px black;
         text-shadow: 1px 1px 1px white;
+    } 
+
+    /*footer*/
+
+    .footer-top {
+        margin-top: 10%;
+        background-color: #cecece;
     }
