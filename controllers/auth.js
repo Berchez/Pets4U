@@ -17,7 +17,7 @@ exports.login = async(req, res) => {
             return res.status(400).render('login')
         }
 
-        db.query('SELECT * FROM usuarios WHERE email = ?', [email], async(error, results) => {
+        db.query('SELECT * FROM Usuarios WHERE email = ?', [email], async(error, results) => {
             if (error) {
                 console.log(error);
             }
@@ -56,7 +56,7 @@ exports.register = (req, res) => {
 
     const { nome_cad, email_cad, senha_cad, confirmsenha, Data, RG, CPF, Gênero, celular, cidade, CEP, UF, End, Número, bairro, Comp } = req.body;
 
-    db.query('SELECT email FROM usuarios WHERE email = ?', [email_cad], async(error, results) => {
+    db.query('SELECT email FROM Usuarios WHERE email = ?', [email_cad], async(error, results) => {
         if (error) {
             console.log(error);
         }
@@ -77,7 +77,7 @@ exports.register = (req, res) => {
         let hashsenha = await bcrypt.hash(senha_cad, 8);
         console.log(hashsenha);
 
-        db.query('INSERT INTO usuarios SET ?', { Email: email_cad, Senha: hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Genero: Gênero, Celular: celular, Endereco: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp }, (error, results) => {
+        db.query('INSERT INTO Usuarios SET ?', { Email: email_cad, Senha: hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Genero: Gênero, Celular: celular, Endereco: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp }, (error, results) => {
             if (error) {
                 console.log(error);
             } else {
