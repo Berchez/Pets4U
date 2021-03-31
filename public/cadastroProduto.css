@@ -1,33 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
-    background-image: url("/dogs-25.jpg");
-    background-position: center center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+    font-size: medium;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+    font-size: medium;
+}
+
+.backgroundNavStaticTop {
+    height: 200vh;
+    background-image: url(/foto-cadastro.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+@media screen and (max-width: 609px) {
+    .form {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .form {
+        width: 40vw;
+    }
+}
+
 .form {
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 400px;
-}
-
-.imglogin {
-    width: 200px;
 }
 
 .title {
     color: #26033d;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.btn button:hover {
-    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
 }
 
 
@@ -44,8 +68,22 @@ body {
 
 /* content que contem os formulários */
 
+@media screen and (max-width: 609px) {
+    .content {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .content {
+        width: 35vw;
+    }
+}
+
 .content {
-    width: 500px;
+    width: 90%;
+    height: 90%;
     margin: 0px auto;
     position: relative;
     border-radius: 3px;
@@ -78,39 +116,21 @@ p {
     margin-bottom: 15px;
 }
 
-label {
-    color: #534060;
-    position: relative;
-}
-
- ::-webkit-input-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
 input {
-    outline: none;
-}
-
-input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 4px;
-    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+    padding: 3%;
+    outline: 0;
+    color: #490675;
     border: 1px solid #b2b2b2;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
 }
 
-.half-box {
-    margin-bottom: 55px;
+label {
+    width: 100%;
+    color: #490675;
+    font-style: italic;
+    font-size: 25px;
 }
 
 
@@ -118,8 +138,10 @@ input:not([type="checkbox"]) {
 
 input[type="submit"] {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 100%;
-    border-radius: 30px;
+    width: 80%;
+    height: 40px;
+    margin-left: 8%;
+    border-radius: 6px;
     padding: 10px;
     border: 0px;
     color: white;
@@ -131,39 +153,122 @@ input[type="submit"]:hover {
 }
 
 #cadastro {
-    position: relative;
-    top: 0px;
-    width: 88%;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 50%;
     padding: 18px 6% 60px 6%;
-    margin: 20px 0 20px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
 }
 
-button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 30%;
-    border-radius: 30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
+#botao {
+    cursor: pointer;
+    border-radius: 50px;
 }
 
-#message {
-    display: block;
-    max-width: 15ch;
-    background-color: rgba(250, 0, 0, 0.6);
-    border: 3px solid white;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
+
+/*navbar*/
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+@media screen and (max-width: 635px) {
+    #logo {
+        margin-left: -20%;
+    }
+}
+
+@media screen and (min-width: 636px) {
+    #logo {
+        margin-left: -90%;
+    }
+}
+
+#logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    #texto-Pets {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    #texto-Pets {
+        font-size: 55px;
+        margin-left: -30%;
+    }
+}
+
+#texto-Pets {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: #370558;
+    text-decoration: underline rgb(103, 143, 255);
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+}
+
+.navbar-brand,
+p {
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
+@media screen and (max-width: 584px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    p {
+        font-size: 30px;
+    }
+}
+
+.nav-links {
+    font-size: 30px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+    margin: 0 5px;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a:hover,
+.navbar-brand:hover {
+    cursor: pointer;
+    color: #29d1ff;
+    background-color: #cecece;
+    border-radius: 16px;
     box-shadow: 0px 0px 3px gray;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px gray;
 }
 
-.hide {
-    display: none !important;
+.nav-link {
+    color: black;
 }
