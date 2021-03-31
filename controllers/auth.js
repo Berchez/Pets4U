@@ -42,7 +42,11 @@ exports.login = async(req, res) => {
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                res.redirect("/home");
+                if(results[0].Email == "alberto@pets4u.com"){
+                    res.redirect("/funcionario");
+                } else {
+                    res.redirect("/home");
+                }
             }
         })
 
