@@ -32,4 +32,8 @@ router.get('/carrinho', (req, res) => {
     res.render('carrinho');
 });
 
+router.get('/removeProduto', (req, res) => {
+    res.render('removeProduto');
+});
+
 module.exports = router;
