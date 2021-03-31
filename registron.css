@@ -149,10 +149,3 @@ p {
 .nav-link {
     color: black;
 }
-
-input,
-textarea {
-    padding: 10px;
-    display: block;
-    width: 90%;
-}
