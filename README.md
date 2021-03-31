@@ -117,3 +117,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </table>
 
 > [De Volta Pra Cima](#Pets4U)
+
+## Agradecimentos especiais:
+- João Pedro Silva Bianco
+- Douglas Felipe de Morais
