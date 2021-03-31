@@ -4,9 +4,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-image: url(img/fundo.jpg);
 }
 
-#cadastro{
+#cadastro {
     width: 600px;
     background-color: white;
     margin: auto;
@@ -15,15 +16,14 @@ body {
     border-radius: 20px;
 }
 
-.title{
+.title {
     margin-left: 30%;
     margin-bottom: 25px;
     color: #490675;
     font-style: italic;
-
 }
 
-input{
+input {
     border-radius: 30px;
     width: 100%;
     height: 100%;
@@ -33,12 +33,14 @@ input{
     color: #490675;
     border: 1px solid #b2b2b2;
 }
-label{
+
+label {
     width: 100%;
     color: #490675;
     font-style: italic;
     font-size: 25px;
 }
+
 .gen {
     font-style: italic;
     text-align: center;
@@ -48,7 +50,7 @@ label{
     border-radius: 30px;
     outline: none;
 }
-  
+
 .uf {
     font-style: italic;
     text-align: center;
@@ -59,14 +61,14 @@ label{
     outline: none;
 }
 
-#botao{
+#botao {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
     color: white;
     margin-top: 50px;
-} 
+}
 
-#botao:hover{
-    background-image: linear-gradient(#330055,#1f0133)
+#botao:hover {
+    background-image: linear-gradient(#330055, #1f0133)
 }
 
 #nav-container {
@@ -117,7 +119,6 @@ p {
     padding: 0;
     color: black;
 }
-
 
 .nav-links {
     font-size: 30px;
