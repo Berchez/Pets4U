@@ -45,9 +45,6 @@
                             </button>
                         </li>
                     </ul>
-                    <form class="form-inline">
-                        <input class="nav-item nav-link" type="search" placeholder="Pesquise aqui">
-                    </form>
                 </div>
             </nav>
         </div>
@@ -195,7 +192,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{this.Nome}}</h5>
                                     <p class="card-text">{{this.Descricao}}</p>
-                                    <a data-name="Ração_Pedigree" data-price="0.5" class="add-to-cart btn btn-primary">Comprar</a>
+                                    <a data-name="{{{this.Nome}}}" data-price="{{{this.Preco_Unidade}}}" class="add-to-cart btn btn-primary">Comprar</a>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +258,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -270,11 +267,11 @@
                         <table class="show-cart table">
 
                         </table>
-                        <div>Total price: $<span class="total-cart"></span></div>
+                        <div>Preço Total: R$<span class="total-cart"></span></div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Order now</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Finalizar</button>
                     </div>
                 </div>
             </div>
