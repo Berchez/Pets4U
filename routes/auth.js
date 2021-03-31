@@ -9,4 +9,7 @@ router.post('/register', authController.register);
 
 router.post('/cadastroProduto', authController.cadastroProduto);
 
+router.post('/gomePageFuncionario', authController.login);
+
+
 module.exports = router;

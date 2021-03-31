@@ -42,10 +42,11 @@ exports.login = async(req, res) => {
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                if(results[0].Email == "alberto@pets4u.com"){
-                    res.redirect("/funcionario");
+                if (results[0].Email == "alberto@pets4u.com") {
+                    res.render("homePageFuncionario");
+
                 } else {
-                    res.redirect("/home");
+                    res.redirect("/");
                 }
             }
         })
@@ -54,6 +55,7 @@ exports.login = async(req, res) => {
         console.log(error);
     }
 }
+
 
 exports.register = (req, res) => {
     console.log(req.body);
