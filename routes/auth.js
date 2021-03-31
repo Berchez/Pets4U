@@ -11,5 +11,7 @@ router.post('/cadastroProduto', authController.cadastroProduto);
 
 router.post('/gomePageFuncionario', authController.login);
 
+router.post('/removeProduto', authController.removeProduto);
+
 
 module.exports = router;

@@ -154,3 +154,28 @@ exports.cadastroProduto = (req, res) => {
 
     })
 }
+
+exports.removeProduto = (req, res) => {
+    console.log(req.body);
+
+    const {Cod} = req.body;
+
+    db.query('SELECT id_produto FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
+        if (error) {
+            console.log(error);
+            return res.redirect('/removeProduto');
+        }
+
+        if (results.length > 0) {
+            db.query('DELETE FROM produto WHERE id_produto = ?', [Cod], async(error, results) => {
+                if (error) {
+                    console.log(error);
+                    return res.redirect('/removeProduto');
+                }
+                console.log('Produto Removido com Sucesso');
+                console.log(results);
+                return res.redirect('/removeProduto');
+            })
+        }
+    })
+}
