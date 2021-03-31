@@ -17,6 +17,7 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 
 });
+module.exports = db;
 
 const publiDirectory = path.join(__dirname, './public');
 app.use(express.static(publiDirectory));
@@ -28,6 +29,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.set('view engine', 'hbs');
+
+
 
 db.connect((error) => {
     if (error) {

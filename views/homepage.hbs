@@ -185,16 +185,18 @@
                     <div class="col-12">
                         <h3 class="main-title"> Nossos Produtos</h3>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="/produto-1.png" class="card-img-top" alt="Produto 1">
-                            <div class="card-body">
-                                <h5 class="card-title"> Ração Pedigree</h5>
-                                <p class="card-text"> Ração Equilibrio Natural Cão Adulto</p>
-                                <a href="carrinho.html" class="card-link mt-3"> Comprar</a>
+                    {{#each data}}
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/produto-1.png" class="card-img-top" alt="Produto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.Nome}}</h5>
+                                    <p class="card-text">{{this.Descricao}}</p>
+                                    <a href="carrinho.html" class="card-link mt-3">Comprar</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {{/each}}
                 </div>
             </div>
         </div>
