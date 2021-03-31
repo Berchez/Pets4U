@@ -85,9 +85,21 @@ header,
     z-index: 99;
 }
 
+@media screen and (max-width: 635px) {
+    #logo {
+        margin-left: -30%;
+    }
+}
+
+@media screen and (min-width: 636px) {
+    #logo {
+        margin-left: -40%;
+    }
+}
+
 #logo {
     width: 80px;
-    margin-left: 5%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
@@ -99,7 +111,6 @@ header,
 @media screen and (min-width: 451px) {
     #texto-Pets {
         font-size: 55px;
-        margin-left: 15%;
     }
 }
 
@@ -108,6 +119,8 @@ header,
     font-weight: bold;
     color: #370558;
     text-decoration: underline rgb(103, 143, 255);
+    margin-bottom: -0.5rem;
+    cursor: pointer;
 }
 
 .navbar-brand,
@@ -116,16 +129,26 @@ p {
     text-shadow: 1px 1px 3px gray;
 }
 
+@media screen and (max-width: 584px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    p {
+        font-size: 30px;
+    }
+}
+
 .navbar-brand {
     font-size: 75px;
-    font-family: 'Crimson';
     padding: 0;
     color: black;
 }
 
 .nav-links {
     font-size: 30px;
-    font-family: 'Crimson';
     padding: 0;
     color: black;
     margin: 0 5px;
