@@ -10,25 +10,62 @@
 </head>
 
 <body>
-    <form class="form" action="">
-        <div class="card">
-            <div class="card-top">
-                <img class="imglogin" src="img/logo-pronta.png" alt="">
-                <h3 class="title">Faça seu login</h3>
-            </div>
-            <div class="card-group">
-                <label>Usuário:</label>
-                <input type="text" name="Usuário" placeholder="Digite seu nome de usuário" required>
-            </div>
-            <div class="card-group">
-                <label>Senha:</label>
-                <input type="password" name="Senha" placeholder="Digite sua senha" required>
-            </div>
-            <div class="card-group btn">
-                <button type="submit">ACESSAR</button>
-            </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a onclick="location.href='/'" class="navbar-brand-img">
+                    <img id="logo" src="/logo-pronta.png" alt="Pets4U"></img>
+                </a>
+                <div class="example">
+                    <a onclick="location.href='/'">
+                        <p id="texto-Pets">Pets4U</p>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="nav-links ml-auto">
+                        <li>
+                            <a href="#Produtos" class="nav-item nav-link">
+                                <p>Produtos</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="location.href='/login'" class="nav-item nav-link">
+                                <p>Faça login</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="location.href='/register'" class="nav-item nav-link">
+                                <p>Cadastre-se</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </form>
+        <form class="form" action="">
+            <div class="card">
+                <div class="card-top">
+                    <img class="imglogin" src="img/logo-pronta.png" alt="">
+                    <h3 class="title">Faça seu login</h3>
+                </div>
+                <div class="card-group">
+                    <label>Usuário:</label>
+                    <input type="text" name="Usuário" placeholder="Digite seu nome de usuário" required>
+                </div>
+                <div class="card-group">
+                    <label>Senha:</label>
+                    <input type="password" name="Senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="card-group btn">
+                    <button type="submit">ACESSAR</button>
+                </div>
+            </div>
+        </form>
 </body>
 
 </html>
