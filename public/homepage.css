@@ -27,23 +27,23 @@ header,
     margin-left: 5%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
     #texto-Pets {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 351px) {
     #texto-Pets {
         font-size: 55px;
-        margin-left: 15%;
     }
 }
 
 #texto-Pets {
     font-family: 'Satisfy', cursive;
     font-weight: bold;
-    color: #370558;
+    margin-left: 15%;
+    color: #26033d;
     text-decoration: underline rgb(103, 143, 255);
 }
 
@@ -58,18 +58,6 @@ p {
     font-family: 'Crimson';
     padding: 0;
     color: black;
-}
-
-@media screen and (max-width: 584px) {
-    p {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-width: 585px) {
-    p {
-        font-size: 30px;
-    }
 }
 
 .nav-links {
@@ -87,22 +75,22 @@ p {
 
 .nav-links li a:hover,
 .navbar-brand:hover {
-    cursor: pointer;
     color: #29d1ff;
     background-color: #0000001e;
     border-radius: 16px;
     box-shadow: 0px 0px 3px gray;
     text-shadow: 1px 1px 1px gray;
+    cursor: pointer;
 }
 
 .sticky .nav-links li a:hover,
 .navbar-brand:hover {
-    cursor: pointer;
     color: #29d1ff;
     background-color: #cecece;
     border-radius: 16px;
     box-shadow: 0px 0px 3px gray;
     text-shadow: 1px 1px 1px gray;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -136,8 +124,7 @@ textarea {
 }
 
 .dentroCarousel {
-    color: white;
-    background-color: rgba(128, 128, 128, 0.432);
+    background-color: rgba(29, 198, 240, 0.432);
     border-radius: 30px;
     box-shadow: 0px 0px 1px #cecece;
     text-shadow: 0.2px 0.2px 0.2px #cecece;
@@ -153,4 +140,167 @@ textarea {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+
+/*Sobre a Pets4U */
+
+#about-area {
+    background-color: #F9F9F9;
+}
+
+.main-title {
+    color: #444;
+    margin: 50px 0 75px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 100px;
+    left: 42.5%;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li {
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+#about-list i {
+    color: #29d1ff;
+    margin-right: 15px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+
+/*Marcas*/
+
+.marcas-title {
+    color: white;
+    margin: 50px 0 75px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.marcas-title::after {
+    content: "";
+    border-top: 2px solid white;
+    width: 20%;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    #area-marcas {
+        background: url(Imagem\ de\ Fundo\ Para\ Celular\ Gratis\ Gratuito\ Free\ Download\ Papel\ de\ Parede\ Wall\ Wallpaper\ Mobile\ Phone\ iPad\ tablet\ iPhone\ Android\ Galaxy\ Sansung\ cachorro\ dog\ puppy\ pet\ -39.jpg);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #area-marcas {
+        background: url(gato.jpg);
+    }
+}
+
+#area-marcas {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#whiskas {
+    width: 325px;
+}
+
+#society {
+    width: 200px;
+}
+
+#pedigree {
+    width: 250px;
+}
+
+#bayer {
+    width: 150px;
+}
+
+#secao {
+    width: 150px;
+}
+
+#nd {
+    width: 150px;
+}
+
+#premier {
+    width: 300px;
+}
+
+#ferplast {
+    width: 150px;
+}
+
+#jambo {
+    width: 200px;
+    margin-top: 50px;
+}
+
+
+/*produtos*/
+
+.card-body {
+    text-align: center;
+}
+
+.card-link {
+    font-size: 25px;
+    font-family: 'Crimson';
+    padding: 0;
+    background-color: rgb(0, 163, 0);
+    border-radius: 16px;
+    color: black;
+    display: block;
+}
+
+.card-link:hover {
+    color: black;
+    background-color: rgb(0, 199, 0);
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px black;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+/*footer*/
+
+.footer-top {
+    margin-top: 10%;
+    background-color: #cecece;
 }
