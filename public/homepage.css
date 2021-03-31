@@ -73,8 +73,14 @@ p {
     display: inline-block;
 }
 
+.nav-link button {
+    background-color: #ffffff00;
+    border: rgba(255, 255, 255, 0);
+}
+
 .nav-links li a:hover,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.navbar-link button:hover {
     color: #29d1ff;
     background-color: #0000001e;
     border-radius: 16px;
@@ -302,5 +308,9 @@ textarea {
 
 .footer-top {
     margin-top: 10%;
+    background-color: #cecece;
+}
+
+.footer-bottom {
     background-color: #cecece;
 }
