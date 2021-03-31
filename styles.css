@@ -38,7 +38,7 @@ body {
     top: 55%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
 }
 
 .card-top {
