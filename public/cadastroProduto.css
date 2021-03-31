@@ -20,7 +20,7 @@ textarea:-moz-placeholder {
 }
 
 .backgroundNavStaticTop {
-    height: 200vh;
+    height: 210vh;
     background-image: url(/foto-cadastro.jpg);
     background-position: center;
     background-size: cover;
@@ -92,7 +92,7 @@ textarea:-moz-placeholder {
 
 /* formatando o cabeçalho dos formulários */
 
-h1 {
+h2 {
     font-size: 48px;
     color: #490675;
     padding: 10px 0;
