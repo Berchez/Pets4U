@@ -37,9 +37,12 @@
                         <li><a onclick="location.href='/login'" class="nav-item nav-link"><p>Faça login</p></a></li>
                         <li><a onclick="location.href='/register'" class="nav-item nav-link"><p>Cadastre-se</p></a></li>
                         <li>
-                            <a href="#carrinho" class="nav-item nav-link">
-                                <div class="fas fa-shopping-cart" alt="Carrinho de compras"></div>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" class>
+                                <a class="nav-item nav-link">
+                                    <div class="fas fa-shopping-cart" alt="Carrinho de compras"></div>
+                                    <span class="total-count"></span>
+                                </a>
+                            </button>
                         </li>
                     </ul>
                     <form class="form-inline">
