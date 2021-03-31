@@ -7,16 +7,12 @@ body {
 }
 
 .backgroundNavStaticTop {
-    height: 110vh;
+    height: 140vh;
     background-image: url(img/foto-cadastro.jpg);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: local;
-}
-
-.card {
-    padding: 30px;
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 609px) {
@@ -41,61 +37,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.card-top {
-    text-align: center;
-}
-
-.imglogin {
-    width: 200px;
-}
-
 .title {
     color: #26033d;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.card-group>label {
-    width: 100%;
-    color: rgb(75, 75, 75);
-    display: block;
-}
-
-.card-group>input {
-    border-radius: 56px;
-    outline: 0;
-    width: 100%;
-    height: 25px;
-    padding: 5px;
-}
-
-.card-group {
-    margin-bottom: 17px;
-}
-
-.cadastre-se>button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 40%;
-    border-radius: 30px;
-    color: white;
-    font-size: 80%;
-    height: 40px;
-    border: 0;
-}
-
-.card-group button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 100%;
-    border-radius: 30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
-}
-
-.btn button:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
 }
 
 
@@ -160,26 +105,10 @@ p {
     margin-bottom: 15px;
 }
 
-label {
-    color: #534060;
-    position: relative;
-}
-
-::-webkit-input-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
 input {
     border-radius: 6px;
     width: 100%;
-    height: 15px;
+    height: 45px;
     outline: 0;
     font-style: italic;
     font-weight: bold;
@@ -194,24 +123,14 @@ label {
     font-size: 25px;
 }
 
-input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 4px;
-    padding: 10px;
-    border: 1px solid #b2b2b2;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-}
-
 
 /*estilo do botão submit */
 
 input[type="submit"] {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
     width: 100%;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 6px;
     padding: 10px;
     border: 0px;
     color: white;
@@ -225,29 +144,11 @@ input[type="submit"]:hover {
 #cadastro {
     position: relative;
     top: 0px;
-    width: 88%;
+    width: 50%;
     padding: 18px 6% 60px 6%;
-    margin: 20px 0 20px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
-}
-
-#message {
-    display: block;
-    max-width: 15ch;
-    background-color: rgba(250, 0, 0, 0.6);
-    border: 3px solid white;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0px 0px 3px gray;
-    text-shadow: 1px 1px 3px black;
-}
-
-.hide {
-    display: none !important;
 }
 
 #botao {
