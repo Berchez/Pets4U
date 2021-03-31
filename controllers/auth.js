@@ -92,7 +92,7 @@ exports.register = (req, res) => {
 exports.cadastroProduto = (req, res) => {
     console.log(req.body);
 
-    const { name, descrição, Cod, Marca, fornecedor, qtd, price, data } = req.body;
+    const { name, descrição, Cod, Marca, fornecedor, qtd, price, data, img } = req.body;
 
     db.query('SELECT id_produto FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
         if (error) {
@@ -128,7 +128,7 @@ exports.cadastroProduto = (req, res) => {
                 }
             })
         } else {
-            db.query('INSERT INTO Produto SET ?', { Id_Produto: Cod, Nome: name, Marca: Marca, Fornecedor: fornecedor, Preco_Unidade: price, Quantidade_Total: qtd, Descricao: descrição }, (error, results) => {
+            db.query('INSERT INTO Produto SET ?', { Id_Produto: Cod, Nome: name, Marca: Marca, Fornecedor: fornecedor, Preco_Unidade: price, Quantidade_Total: qtd, Descricao: descrição, imagem: img }, (error, results) => {
                 if (error) {
                     console.log(error);
                     return res.redirect('/');
