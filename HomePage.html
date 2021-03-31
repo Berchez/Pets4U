@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -33,9 +34,12 @@
                         <li><a href="index.html" class="nav-item nav-link">Faça login</a></li>
                         <li><a href="registro.html" class="nav-item nav-link">Cadastre-se</a></li>
                         <li>
-                            <a href="carrinho.html" class="nav-item nav-link">
-                                <div class="fas fa-shopping-cart" alt="Carrinho de compras"></div>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" class>
+                                <a class="nav-item nav-link">
+                                    <div class="fas fa-shopping-cart" alt="Carrinho de compras"></div>
+                                    <span class="total-count"></span>
+                                </a>
+                            </button>
                         </li>
                     </ul>
                     <form class="form-inline">
@@ -188,13 +192,14 @@
                             <div class="card-body">
                                 <h5 class="card-title"> Ração Pedigree</h5>
                                 <p class="card-text"> Ração Equilibrio Natural Cão Adulto</p>
-                                <a href="carrinho.html" class="card-link mt-3"> Comprar</a>
+                                <a data-name="Ração Pedigree" data-price="0.5" class="add-to-cart btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--footer-->
         <footer>
             <div class="footer-top">
                 <div class="container">
@@ -226,10 +231,6 @@
                                     <p><a href="index.html">login</a></p>
                                     <p><a href="registro.html">Cadastre-se</a></p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p><a href="carrinho.html">Carrinho</a></p>
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -249,8 +250,31 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="HomePage.js"></script>
     <script src="carrinho.js"></script>
