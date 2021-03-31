@@ -73,8 +73,13 @@ p {
     display: inline-block;
 }
 
+.nav-link button {
+    background-color: #ffffff00;
+}
+
 .nav-links li a:hover,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.navbar-link button:hover {
     color: #29d1ff;
     background-color: #0000001e;
     border-radius: 16px;
