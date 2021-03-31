@@ -1,20 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
-    color: rgb(0, 0, 0);
-    font: normal 20pt Arial;
-    margin: 10px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundNavStaticTop {
+    height: 110vh;
+    background-image: url("/dogs-25.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 
 .card {
-    box-shadow: 1px 1px 5px #ccc;
-    background-color: white;
     padding: 30px;
-    border-radius: 20px;
+}
+
+@media screen and (max-width: 609px) {
+    .form {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .form {
+        width: 40vw;
+    }
 }
 
 .form {
-    width: 400px;
-    margin: auto;
-    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .card-top {
@@ -26,8 +50,9 @@ body {
 }
 
 .title {
-    margin-top: auto;
-    color: black;
+    color: #26033d;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-group>label {
@@ -37,7 +62,7 @@ body {
 }
 
 .card-group>input {
-    border-radius: 5px;
+    border-radius: 56px;
     outline: 0;
     width: 100%;
     height: 25px;
@@ -48,7 +73,17 @@ body {
     margin-bottom: 17px;
 }
 
-.card-group>button {
+.cadastre-se>button {
+    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    width: 40%;
+    border-radius: 30px;
+    color: white;
+    font-size: 80%;
+    height: 40px;
+    border: 0;
+}
+
+.card-group button {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
     width: 100%;
     border-radius: 30px;
@@ -59,6 +94,7 @@ body {
 }
 
 .btn button:hover {
+    cursor: pointer;
     background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
 }
 
@@ -72,9 +108,9 @@ body {
     border: 1px solid #b2b2b2;
     border-radius: 3px;
     outline: none;
-  }
-  
-  .uf {
+}
+
+.uf {
     color: #3a055e;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -84,30 +120,47 @@ body {
     border: 1px solid #b2b2b2;
     border-radius: 3px;
     outline: none;
-  }
-  
-  /* CSS reset */
-  
-  *,
-  *:before,
-  *:after {
+}
+
+
+/* CSS reset */
+
+*,
+*:before,
+*:after {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  /* content que contem os formulários */
-  
-  .content {
-    width: 500px;
+}
+
+
+/* content que contem os formulários */
+
+@media screen and (max-width: 609px) {
+    .content {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .content {
+        width: 35vw;
+    }
+}
+
+.content {
+    width: 90%;
+    height: 90%;
     margin: 0px auto;
     position: relative;
     border-radius: 3px;
-  }
-  
-  /* formatando o cabeçalho dos formulários */
-  
-  h1 {
+}
+
+
+/* formatando o cabeçalho dos formulários */
+
+h1 {
     font-size: 48px;
     color: #490675;
     padding: 10px 0;
@@ -115,57 +168,43 @@ body {
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
-  }
-  
-  h1:after {
+}
+
+h1:after {
     content: " ";
     display: block;
     width: 100%;
     height: 2px;
     margin-top: 10px;
-    background: -webkit-linear-gradient(
-      left,
-      rgba(147, 184, 189, 0) 0%,
-      rgba(147, 184, 189, 0.8) 20%,
-      rgba(147, 184, 189, 1) 53%,
-      rgba(147, 184, 189, 0.8) 79%,
-      rgba(147, 184, 189, 0) 100%
-    );
-    background: linear-gradient(
-      left,
-      rgba(147, 184, 189, 0) 0%,
-      rgba(147, 184, 189, 0.8) 20%,
-      rgba(147, 184, 189, 1) 53%,
-      rgba(147, 184, 189, 0.8) 79%,
-      rgba(147, 184, 189, 0) 100%
-    );
-  }
-  
-  p {
+    background: -webkit-linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+    background: linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+}
+
+p {
     margin-bottom: 15px;
-  }
-  
-  label {
+}
+
+label {
     color: #534060;
     position: relative;
-  }
-  
-  ::-webkit-input-placeholder {
+}
+
+::-webkit-input-placeholder {
     color: #bebcbc;
     font-style: italic;
-  }
-  
-  input:-moz-placeholder,
-  textarea:-moz-placeholder {
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
     color: #bebcbc;
     font-style: italic;
-  }
-  
-  input {
+}
+
+input {
     outline: none;
-  }
-  
-  input:not([type="checkbox"]) {
+}
+
+input:not([type="checkbox"]) {
     width: 95%;
     margin-top: 4px;
     padding: 10px;
@@ -174,11 +213,12 @@ body {
     border-radius: 3px;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
     box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-  }
-  
-  /*estilo do botão submit */
-  
-  input[type="submit"] {
+}
+
+
+/*estilo do botão submit */
+
+input[type="submit"] {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
     width: 100%;
     border-radius: 30px;
@@ -186,13 +226,13 @@ body {
     border: 0px;
     color: white;
     outline: 0;
-  }
-  
-  input[type="submit"]:hover {
+}
+
+input[type="submit"]:hover {
     background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
-  }
-  
-  #cadastro {
+}
+
+#cadastro {
     position: relative;
     top: 0px;
     width: 88%;
@@ -201,19 +241,9 @@ body {
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
-  }
-  
-  button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 30%;
-    border-radius: 30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
-  }
-  
-  #message {
+}
+
+#message {
     display: block;
     max-width: 15ch;
     background-color: rgba(250, 0, 0, 0.6);
@@ -224,9 +254,125 @@ body {
     color: white;
     box-shadow: 0px 0px 3px gray;
     text-shadow: 1px 1px 3px black;
-  }
-  
-  .hide {
+}
+
+.hide {
     display: none !important;
-  }
-  
+}
+
+#botao {
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+/*navbar*/
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+@media screen and (max-width: 635px) {
+    #logo {
+        margin-left: -30%;
+    }
+}
+
+@media screen and (min-width: 636px) {
+    #logo {
+        margin-left: -90%;
+    }
+}
+
+#logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    #texto-Pets {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    #texto-Pets {
+        font-size: 55px;
+        margin-left: -30%;
+    }
+}
+
+#texto-Pets {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: #370558;
+    text-decoration: underline rgb(103, 143, 255);
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+}
+
+.navbar-brand,
+p {
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
+@media screen and (max-width: 584px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    p {
+        font-size: 30px;
+    }
+}
+
+.nav-links {
+    font-size: 30px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+    margin: 0 5px;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a:hover,
+.navbar-brand:hover {
+    cursor: pointer;
+    color: #29d1ff;
+    background-color: #cecece;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px gray;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.nav-link {
+    color: black;
+}
+
+input,
+textarea {
+    padding: 10px;
+    display: block;
+    width: 90%;
+}
