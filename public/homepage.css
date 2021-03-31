@@ -75,6 +75,7 @@ p {
 
 .nav-link button {
     background-color: #ffffff00;
+    border: rgba(255, 255, 255, 0);
 }
 
 .nav-links li a:hover,
