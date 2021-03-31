@@ -70,9 +70,8 @@
     }
     
     .nav-links button {
-        background-color: white;
-        border: white;
-        color: black;
+        background-color: rgba(255, 255, 255, 0);
+        border: rgba(255, 255, 255, 0);
     }
     
     .nav-links li a:hover,
