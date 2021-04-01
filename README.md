@@ -25,10 +25,10 @@
 
 ### -:books: Tabela de Conteúdos
 
-- [Descrição](#Descrição)
-- [Como Usar](#Como-Usar)
-- [Licensa](#licensa)
-- [Colaboradores](#-:raising_hand_man:-Colaboradores)
+- Descrição
+- Como Usar
+- Licensa
+- Colaboradores
 
 ---
 
