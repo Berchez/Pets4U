@@ -25,10 +25,10 @@
 
 ### -:books: Tabela de Conteúdos
 
-- [Descrição](#Descrição)
-- [Como Usar](#Como-Usar)
-- [Licensa](#licensa)
-- [Colaboradores](#colaboradores)
+- Descrição
+- Como Usar
+- Licensa
+- Colaboradores
 
 ---
 
@@ -45,13 +45,6 @@ Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços onlin
 
 ---
 
-## -:man_teacher: Como Usar
-
-#### -:teacher:Instalação
-
-
----
-
 ## -:blue_book: Licensa
 
 MIT License
@@ -64,7 +57,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-> [De Volta Pra Cima](#Pets4U)
 
 ---
 
@@ -115,8 +107,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </td>
   </tr>
 </table>
-
-> [De Volta Pra Cima](#Pets4U)
 
 ## Agradecimentos especiais:
 - João Pedro Silva Bianco
