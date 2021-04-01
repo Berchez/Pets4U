@@ -1,32 +1,32 @@
 {
-  "name": "pets4u",
-  "version": "1.0.0",
-  "description": "Repositório dedicado a realizar o trabalho de Gestão e Ciclo de Vida da Aplicação.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Berchez/Pets4U.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Berchez/Pets4U/issues"
-  },
-  "homepage": "https://github.com/Berchez/Pets4U#readme",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.7",
-    "path": "^0.12.7",
-    "sequelize": "^6.6.2"
-  }
+    "name": "pets4u",
+    "version": "1.0.0",
+    "description": "Repositório dedicado a realizar o trabalho de Gestão e Ciclo de Vida da Aplicação.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Berchez/Pets4U.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Berchez/Pets4U/issues"
+    },
+    "homepage": "https://github.com/Berchez/Pets4U#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.7",
+        "path": "^0.12.7",
+        "sequelize": "^6.6.2"
+    }
 }
