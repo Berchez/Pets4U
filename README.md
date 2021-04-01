@@ -45,13 +45,6 @@ Gerenciar um PetShop sem uma maneira de oferecer seus produtos e serviços onlin
 
 ---
 
-## -:man_teacher: Como Usar
-
-#### -:teacher:Instalação
-
-
----
-
 ## -:blue_book: Licensa
 
 MIT License
