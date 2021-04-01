@@ -9,67 +9,70 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 })
 
-exports.login = async (req,res) => {
+exports.login = async(req, res) => {
     try {
-        const {senha, email} = req.body;
+        const { email, senha } = req.body;
         console.log(`Email: ${email}\nSenha: ${senha}`)
-        if(!email || !senha) {
-            return res.status(400).render('login', {
-                message: 'Coloque o email e senha'
-            })
+        if (!email || !senha) {
+            return res.status(400).render('login')
         }
 
-        db.query('SELECT * FROM users WHERE email = ?', [email], async (error, results) => {
-            console.log(results);
-            console.log(error);
-            if( !results || !(await bcrypt.compare(senha, results[0].senha))) {
-                res.status(401).render('login', {
-                    message: 'Email ou senha incorretos'
-                })
+        db.query('SELECT * FROM Usuarios WHERE email = ?', [email], async(error, results) => {
+            if (error) {
+                console.log(error);
             }
-            else {
+            console.log(results);
+            if (!results || !(await bcrypt.compare(senha, results[0].Senha))) {
+                res.status(401).render('login');
+            } else {
                 const id = results[0].id;
 
-                const token = jwt.sign({id: id}, process.env.JWT_SECRET, {
-                     expiresIn: process.env.JWT_EXPIRES_IN
+                const token = jwt.sign({ id: id }, process.env.JWT_SECRET, {
+                    expiresIn: process.env.JWT_EXPIRES_IN
                 })
 
                 console.log("O token é: " + token);
 
                 const cookieOptions = {
                     expires: new Date(
-                       Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000 //horas do dia * horas * minutos * milissegundos
+                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000 //horas do dia * horas * minutos * milissegundos
                     ),
                     httpOnly: true
                 }
 
                 //setando o coockie
                 res.cookie('jwt', token, cookieOptions);
-                res.redirect("/home");
+                if (results[0].Email == "alberto@pets4u.com") {
+                    res.render("homePageFuncionario");
+
+                } else {
+                    res.redirect("/");
+                }
             }
         })
 
-    }catch(error) {
+    } catch (error) {
         console.log(error);
     }
 }
 
+
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const {nome_cad, email_cad, senha_cad, confirmsenha, Data, RG, CPF, Gênero, celular, cidade, CEP, UF, End, Número, bairro, Comp} = req.body;
+    const { nome_cad, email_cad, senha_cad, confirmsenha, Data, RG, CPF, Gênero, celular, cidade, CEP, UF, End, Número, bairro, Comp } = req.body;
 
-    db.query('SELECT email FROM users WHERE email = ?', [email_cad], async (error, results) => {
-        if(error) {
+    db.query('SELECT email FROM Usuarios WHERE email = ?', [email_cad], async(error, results) => {
+        if (error) {
             console.log(error);
         }
 
-        if(results.length > 0) {
+        if (results.length > 0) {
             console.log('Esse email ja foi cadastrado');
             return res.render('register', {
                 message: 'Esse email já foi cadastrado.'
             })
-        } else if( senha_cad !== confirmsenha) {
+        } else if (senha_cad !== confirmsenha) {
             console.log('senhas diferem');
 
             return res.render('register', {
@@ -80,14 +83,99 @@ exports.register = (req, res) => {
         let hashsenha = await bcrypt.hash(senha_cad, 8);
         console.log(hashsenha);
 
-        db.query('INSERT INTO users SET ?', {Email: email_cad, Senha:hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Gênero: Gênero, Celular: celular, Endereço: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp}, (error, results) => {
-            if(error) {
+        db.query('INSERT INTO Usuarios SET ?', { Email: email_cad, Senha: hashsenha, RG: RG, Nome_Completo: nome_cad, CPF: CPF, Data_Nascimento: Data, Genero: Gênero, Celular: celular, Endereco: End, CEP: CEP, UF: UF, Cidade: cidade, Bairro: bairro, Numero: Número, Complemento: Comp }, (error, results) => {
+            if (error) {
                 console.log(error);
             } else {
-            console.log('Logado');
+                console.log('Logado');
                 console.log(results);
                 return res.redirect('/login');
             }
         })
+    })
+}
+
+exports.cadastroProduto = (req, res) => {
+    console.log(req.body);
+
+    const { name, descrição, Cod, Marca, fornecedor, qtd, price, data, img } = req.body;
+
+    db.query('SELECT id_produto FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
+        if (error) {
+            console.log(error);
+            return res.redirect('/');
+        }
+
+        if (results.length > 0) {
+            db.query('INSERT INTO validade SET ?', { Id_Produto: Cod, Data_Validade: data, Quantidade: qtd }, (error, results) => {
+                if (error) {
+                    console.log(error);
+                    return res.redirect('/');
+                } else {
+                    db.query('SELECT quantidade_total FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
+                        if (error) {
+                            console.log(error);
+                        }
+                        for (var i in results) {
+                            var quantidade_produto = results[i].quantidade_total;
+                        }
+                        var quantidade_insercao = qtd;
+                        var quantidade_nova = parseInt(quantidade_produto) + parseInt(quantidade_insercao);
+                        db.query('UPDATE Produto SET quantidade_total = ? WHERE id_produto = ?', [quantidade_nova, Cod], async(error, results) => {
+                            if (error) {
+                                console.log(error);
+                                return res.redirect('/');
+                            }
+                            console.log('Produto Cadastrado com Sucesso');
+                            console.log(results);
+                            return res.redirect('/cadastroProduto');
+                        })
+                    })
+                }
+            })
+        } else {
+            db.query('INSERT INTO Produto SET ?', { Id_Produto: Cod, Nome: name, Marca: Marca, Fornecedor: fornecedor, Preco_Unidade: price, Quantidade_Total: qtd, Descricao: descrição, imagem: img }, (error, results) => {
+                if (error) {
+                    console.log(error);
+                    return res.redirect('/');
+                } else {
+                    db.query('INSERT INTO validade SET ?', { Id_Produto: Cod, Data_Validade: data, Quantidade: qtd }, (error, results) => {
+                        if (error) {
+                            console.log(error);
+                            return res.redirect('/');
+                        }
+                        console.log('Produto Cadastrado com Sucesso');
+                        console.log(results);
+                        return res.redirect('/cadastroProduto');
+                    })
+                }
+            })
+        }
+
+    })
+}
+
+exports.removeProduto = (req, res) => {
+    console.log(req.body);
+
+    const { Cod } = req.body;
+
+    db.query('SELECT id_produto FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
+        if (error) {
+            console.log(error);
+            return res.redirect('/removeProduto');
+        }
+
+        if (results.length > 0) {
+            db.query('DELETE FROM Produto WHERE id_produto = ?', [Cod], async(error, results) => {
+                if (error) {
+                    console.log(error);
+                    return res.redirect('/removeProduto');
+                }
+                console.log('Produto Removido com Sucesso');
+                console.log(results);
+                return res.redirect('/removeProduto');
+            })
+        }
     })
 }

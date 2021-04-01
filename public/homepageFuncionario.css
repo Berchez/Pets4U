@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .backgroundNavStaticTop {
@@ -12,7 +11,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: local;
+    background-attachment: fixed;
 }
 
 .card {
@@ -281,13 +280,13 @@ header,
 
 @media screen and (max-width: 635px) {
     #logo {
-        margin-left: -30%;
+        margin-left: 10%;
     }
 }
 
 @media screen and (min-width: 636px) {
     #logo {
-        margin-left: -90%;
+        margin-left: 50%;
     }
 }
 
@@ -299,13 +298,14 @@ header,
 @media screen and (max-width: 450px) {
     #texto-Pets {
         font-size: 30px;
+        margin-right: 20%;
     }
 }
 
 @media screen and (min-width: 451px) {
     #texto-Pets {
         font-size: 55px;
-        margin-left: -30%;
+        margin-left: 35%;
     }
 }
 
@@ -368,11 +368,4 @@ p {
 
 .nav-link {
     color: black;
-}
-
-input,
-textarea {
-    padding: 10px;
-    display: block;
-    width: 90%;
 }

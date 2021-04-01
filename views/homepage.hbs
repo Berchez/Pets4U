@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="/pata.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-xl navbar-light">
+                <a href="#" class="navbar-brand-img">
+                    <img id="logo" src="/logo-pronta.png" alt="Pets4U"></img>
+                </a>
+                <div class="example">
+                    <a href="#">
+                        <p id="texto-Pets">Pets4U</p>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="nav-links ml-auto">
+                        <li><a href="#Produtos" class="nav-item nav-link"><p>Produtos</p></a></li>
+                        <li><a onclick="location.href='/login'" class="nav-item nav-link"><p>Faça login</p></a></li>
+                        <li><a onclick="location.href='/register'" class="nav-item nav-link"><p>Cadastre-se</p></a></li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" class>
+                                <a class="nav-item nav-link">
+                                    <div class="fas fa-shopping-cart" alt="Carrinho de compras"></div>
+                                    <span class="total-count"></span>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/wall1.jpg" class="d-none d-md-block w-100" alt="slide 1">
+                    <img src="/mobile.jpg" class="d-md-none" alt="slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="dentroCarousel">Encontre na Pets4U o melhor para seu pet</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/wall.jpg" class="d-none d-md-block w-100" alt="slide 2">
+                    <img src="/mobile2.jpg" class="d-md-none" alt="slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="dentroCarousel">Temos as melhores marcas</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/wall3.jpg" class="d-none d-md-block d-lg-block w-100" alt="slide 3">
+                    <img src="/mobile3.jpg" class="d-md-none" alt="slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="dentroCarousel">Preço baixo e qualidade alta é na Pets4U</h1>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Avançar</span>
+            </a>
+        </div>
+        <div id="about-area">
+            <div class=container>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title"> Sobre a Pets4U </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/pet.novo.jpg" alt="Pets4U">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="about-title"> Quem Somos </h3>
+                        <p>Somos a Pets4U, um e-commerce feito e pensado especialmente para o bem-estar e saúde daqueles que tanto amamos. Aqui você encontra tudo de melhor para que seu pet se sinta especial como ele merece. Temos uma gama de produtos e
+                            todos com muita qualidade e aquele precinho que cabe no seu bolso.</p>
+                        <p> Conheça nosso diferencial:</p>
+                        <ul id="about-list">
+                            <li> <i class="fas fa-check"></i> Amor e Carinho </li>
+                            <li> <i class="fas fa-check"></i> As Melhores Rações </li>
+                            <li> <i class="fas fa-check"></i> Tudo para a diversão do seu pet </li>
+                            <li> <i class="fas fa-check"></i> O cuidado que eles precisam </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="area-marcas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="marcas-title"> Nossas marcas a venda </h3>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="marcas">
+                        <div class="row">
+                            <div class="img-center" class="col-md-4">
+                                <a>
+                                    <img alt="Logo Bayer" id="bayer" src="/bayer-logo-38E8F61A58-seeklogo.com.png">
+                                </a>
+                            </div>
+                            <div class="img-center" class="col-md-4">
+                                <a>
+                                    <img alt="Logo Whiskas" id="whiskas" src="/whiskas-logo.png">
+                                </a>
+                            </div>
+                            <div class="img-center" class="col-md-4">
+                                <a>
+                                    <img alt="Logo Super Secão" id="secao" src="/super secao.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo Pet Society" id="society" src="/pet society.png">
+                                    </a>
+                                </div>
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo Pedigree" id="pedigree" src="/pedigree-logo-2CB925BA9C-seeklogo.com.png">
+                                    </a>
+                                </div>
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo Jambo" id="jambo" src="/jambo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo Ferplast" id="ferplast" src="/Ferplast.png">
+                                    </a>
+                                </div>
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo Premier Pet" id="premier" src="/premier.png">
+                                    </a>
+                                </div>
+                                <div class="img-center" class="col-md-4">
+                                    <a>
+                                        <img alt="Logo ND" id="nd" src="/35_06_nd-prime.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--produtos-->
+        <div id="Produtos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title"> Nossos Produtos</h3>
+                    </div>
+                    {{#each data}}
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="{{{this.imagem}}}" class="card-img-top" alt="Produto 1" style="height: 30vh; margin:auto; width: 230px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.Nome}}</h5>
+                                    <p class="card-text">{{this.Descricao}}</p>
+                                    <a data-name="{{{this.Nome}}}" data-price="{{{this.Preco_Unidade}}}" class="add-to-cart btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <footer>
+        	<div class="footer-top">
+		        <div class="container">
+		        	<div class="row">
+		        		<div class="col-md-3 footer-about wow fadeInUp">
+		        			<h3>Sobre nós</h3>
+		        			<p>
+		        				Somos uma empresa jovem sempre em busca de ideias novas e criativas para ajudá-lo com nossos produtos no seu dia-dia.
+		        			</p>
+		        			<p>©️ Company Inc.</p>
+	                    </div>
+		        		<div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+		        			<h3>Contato</h3>
+		                	<p><i class="fas fa-map-marker-alt"></i> Universidade Federal de Alfenas 356 centro </p>
+		                	<p><i class="fas fa-phone"></i> telefone: (35)3295-2525</p>
+		                	<p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">pets4u@gmail.com</a></p>
+		                	<p><i class="fab fa-skype"></i> Skype: pets_4U </p>
+	                    </div>
+	                    <div class="col-md-4 footer-links wow fadeInUp">
+	                    	<div class="row">
+	                    		<div class="col">
+	                    			<h3>Links</h3>
+	                    		</div>
+	                    	</div>
+	                    	<div class="row">
+	                    		<div class="col-md-6">
+	                    			<p><a href="#">Inicio</a></p>
+	                    			<p><a href="#Produtos">Produtos</a></p>
+	                    			<p><a onclick="location.href='/login'" style="color: #007bff">Login</a></p>
+	                    			<p><a href="registro.html">Cadastre-se</a></p>
+	                    		</div>
+	                    		<div class="col-md-6">
+	                    			<p><a href="carrinho.html">Carrinho</a></p>
+	                    		
+	                    		</div>
+	                    	</div>
+	                    </div>
+		            </div>
+		        </div>
+	        </div>
+	        <div class="footer-bottom">
+	        	<div class="container">
+	        		<div class="row">
+	           			<div class="col-12 footer-social text-center mb-2">
+	                    	<a href="#"><i class="fab fa-facebook-f mr-2"></i></a> 
+							<a href="#"><i class="fab fa-twitter mr-2"></i></a> 
+							<a href="#"><i class="fab fa-google-plus-g mr-2"></i></a> 
+							<a href="#"><i class="fab fa-instagram mr-2"></i></a> 
+							<a href="#"><i class="fab fa-pinterest mr-2"></i></a>
+	                    </div>
+	           		</div>
+	        	</div>
+	        </div>
+        </footer>
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div>Preço Total: R$<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="/homePageJS.js"></script>
+</body>
+
+</html>

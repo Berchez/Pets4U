@@ -6,17 +6,26 @@ body {
     padding: 0;
 }
 
-.backgroundNavStaticTop {
-    height: 110vh;
-    background-image: url("/dogs-25.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: local;
+::-webkit-input-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+    font-size: medium;
 }
 
-.card {
-    padding: 30px;
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #bebcbc;
+    font-style: italic;
+    font-size: medium;
+}
+
+.backgroundNavStaticTop {
+    height: 100vh;
+    background-image: url(/foto-cadastro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 609px) {
@@ -35,91 +44,14 @@ body {
 .form {
     margin: 0;
     position: absolute;
-    top: 75%;
-    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.card-top {
-    text-align: center;
-}
-
-.imglogin {
-    width: 200px;
 }
 
 .title {
     color: #26033d;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.card-group>label {
-    width: 100%;
-    color: rgb(75, 75, 75);
-    display: block;
-}
-
-.card-group>input {
-    border-radius: 56px;
-    outline: 0;
-    width: 100%;
-    height: 25px;
-    padding: 5px;
-}
-
-.card-group {
-    margin-bottom: 17px;
-}
-
-.cadastre-se>button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 40%;
-    border-radius: 30px;
-    color: white;
-    font-size: 80%;
-    height: 40px;
-    border: 0;
-}
-
-.card-group button {
-    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 100%;
-    border-radius: 30px;
-    padding: 10px;
-    border: 0px;
-    color: white;
-    outline: 0;
-}
-
-.btn button:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
-}
-
-.gen {
-    color: #490675;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    height: 37px;
-    width: 100%;
-    border: 1px solid #b2b2b2;
-    border-radius: 3px;
-    outline: none;
-}
-
-.uf {
-    color: #3a055e;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    height: 37px;
-    width: 100%;
-    border: 1px solid #b2b2b2;
-    border-radius: 3px;
-    outline: none;
 }
 
 
@@ -160,7 +92,7 @@ body {
 
 /* formatando o cabeçalho dos formulários */
 
-h1 {
+h2 {
     font-size: 48px;
     color: #490675;
     padding: 10px 0;
@@ -184,35 +116,21 @@ p {
     margin-bottom: 15px;
 }
 
-label {
-    color: #534060;
-    position: relative;
-}
-
-::-webkit-input-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: #bebcbc;
-    font-style: italic;
-}
-
 input {
-    outline: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+    padding: 3%;
+    outline: 0;
+    color: #490675;
+    border: 1px solid #b2b2b2;
 }
 
-input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 4px;
-    padding: 10px;
-    border: 1px solid #b2b2b2;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+label {
+    width: 100%;
+    color: #490675;
+    font-style: italic;
+    font-size: 25px;
 }
 
 
@@ -220,8 +138,10 @@ input:not([type="checkbox"]) {
 
 input[type="submit"] {
     background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
-    width: 100%;
-    border-radius: 30px;
+    width: 80%;
+    height: 40px;
+    margin-left: 8%;
+    border-radius: 6px;
     padding: 10px;
     border: 0px;
     color: white;
@@ -233,31 +153,14 @@ input[type="submit"]:hover {
 }
 
 #cadastro {
-    position: relative;
-    top: 0px;
-    width: 88%;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 50%;
     padding: 18px 6% 60px 6%;
-    margin: 20px 0 20px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
     border-radius: 30px;
-}
-
-#message {
-    display: block;
-    max-width: 15ch;
-    background-color: rgba(250, 0, 0, 0.6);
-    border: 3px solid white;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0px 0px 3px gray;
-    text-shadow: 1px 1px 3px black;
-}
-
-.hide {
-    display: none !important;
 }
 
 #botao {
@@ -281,7 +184,7 @@ header,
 
 @media screen and (max-width: 635px) {
     #logo {
-        margin-left: -30%;
+        margin-left: -20%;
     }
 }
 
@@ -368,11 +271,4 @@ p {
 
 .nav-link {
     color: black;
-}
-
-input,
-textarea {
-    padding: 10px;
-    display: block;
-    width: 90%;
 }
