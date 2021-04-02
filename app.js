@@ -10,21 +10,13 @@ console.log(__dirname);
 
 const app = express();
 
-const db = mysql.createPool({
+var db = mysql.createPool({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE
 
 });
-
-db.getConnection((error) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("MYSQL Connected...");
-    }
-})
 
 module.exports = db;
 
@@ -40,13 +32,10 @@ app.use(cookieParser());
 app.set('view engine', 'hbs');
 
 
-
-
-
 //Define Routes
 app.use('/', require('./routes/pages.js'));
 app.use('/auth', require('./routes/auth'));
 
 app.listen(3000, () => {
-    console.log("Server started on Port 5000");
+    console.log("Server started");
 });
