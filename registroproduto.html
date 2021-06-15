@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="icon" type="image/png" href="/pata.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="HomePage.html #" class="navbar-brand-img">
+                    <img id="logo" src="img/logo-pronta.png" alt="Pets4U"></img>
+                </a>
+                <div class="example">
+                    <a href="HomePage.html #">
+                        <p id="texto-Pets">Pets4U</p>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="nav-links ml-auto">
+                        <li>
+                            <a href="HomePage.html #Produtos" class="nav-item nav-link">
+                                <p>Produtos</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="location.href='index.html'" class="nav-item nav-link">
+                                <p>Faça login</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="location.href='registro.html'" class="nav-item nav-link">
+                                <p>Cadastre-se</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="backgroundNavStaticTop">
+        <div class="content">
+            <div id="cadastro">
+                <h1>Cadastrar Produto</h1>
+                <form action="/auth/cadastroProduto" method="post">
+                    <p>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite o nome do produto" required>
+                    </p>
+                    <p>
+                        <label for="descrição">Descrição</label>
+                        <input type="text" name="descrição" id="descrição" placeholder="Descrição">
+                    </p>
+                    <p>
+                        <label for="cod">Código do produto</label>
+                        <input type="number" name="Cod" id="Cod" placeholder="Digite o código do produto" min="0" required>
+                    </p>
+                    <p>
+                        <label for="Marca">Marca</label>
+                        <input type="text" name="Marca" id="Marca" placeholder="Digite a Marca do produto" required>
+                    </p>
+                    <p>
+                        <label for="fornecedor">Fornecedor</label>
+                        <input type="text" name="fornecedor" id="fornecedor" placeholder="Fornecedor" required>
+                    </p>
+                    <p>
+                        <label for="qtd">Quantidade</label>
+                        <input type="number" name="qtd" id="qtd" placeholder="Quantidade" min="1" required>
+                    </p>
+                    <p>
+                        <label for="img">Imagem</label>
+                        <input type="text" name="img" id="img" placeholder="Insira o URL da imagem" required>
+                    </p>
+                    <p>
+                        <label for="price">Preço unitário</label>
+                        <input type="text" name="price" id="price" placeholder="Digite o preço unitário" onkeydown="javascript: fMasc( this, mPreco );" required>
+                    </p>
+                    <p>
+                        <label for="data">Data de validade</label>
+                        <input type="text" name="data" id="data" placeholder="11/11/1111" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" onkeydown="javascript: fMasc( this, mData );" maxlength="10" required>
+                    </p>
+                    <input type="submit" id="botao" value="Cadastar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="produtos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</body>
+
+</html>

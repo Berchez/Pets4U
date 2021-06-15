@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundNavStaticTop {
+    height: 140vh;
+    background-image: url(img/foto-cadastro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 609px) {
+    .form {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .form {
+        width: 40vw;
+    }
+}
+
+.form {
+    margin: 0;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: #26033d;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* CSS reset */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* content que contem os formulários */
+
+@media screen and (max-width: 609px) {
+    .content {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .content {
+        width: 35vw;
+    }
+}
+
+.content {
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    position: relative;
+    border-radius: 3px;
+}
+
+
+/* formatando o cabeçalho dos formulários */
+
+h1 {
+    font-size: 48px;
+    color: #490675;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h1:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+    background: linear-gradient( left, rgba(147, 184, 189, 0) 0%, rgba(147, 184, 189, 0.8) 20%, rgba(147, 184, 189, 1) 53%, rgba(147, 184, 189, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+input {
+    border-radius: 6px;
+    width: 100%;
+    height: 45px;
+    outline: 0;
+    font-style: italic;
+    font-weight: bold;
+    color: #490675;
+    border: 1px solid #b2b2b2;
+}
+
+label {
+    width: 100%;
+    color: #490675;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+/*estilo do botão submit */
+
+input[type="submit"] {
+    background-image: linear-gradient(to right, rgb(0, 0, 158), rgb(102, 20, 95));
+    width: 50%;
+    height: 40px;
+    margin-left: 18%;
+    border-radius: 6px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    outline: 0;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(51, 3, 47));
+}
+
+#cadastro {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 50%;
+    padding: 18px 6% 60px 6%;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189, 0.8);
+    border-radius: 30px;
+}
+
+#botao {
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+/*navbar*/
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header,
+.navbar {
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+@media screen and (max-width: 635px) {
+    #logo {
+        margin-left: -30%;
+    }
+}
+
+@media screen and (min-width: 636px) {
+    #logo {
+        margin-left: -90%;
+    }
+}
+
+#logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    #texto-Pets {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    #texto-Pets {
+        font-size: 55px;
+        margin-left: -30%;
+    }
+}
+
+#texto-Pets {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: #370558;
+    text-decoration: underline rgb(103, 143, 255);
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+}
+
+.navbar-brand,
+p {
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.navbar-brand {
+    font-size: 75px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+}
+
+@media screen and (max-width: 584px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    p {
+        font-size: 30px;
+    }
+}
+
+.nav-links {
+    font-size: 30px;
+    font-family: 'Crimson';
+    padding: 0;
+    color: black;
+    margin: 0 5px;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a:hover,
+.navbar-brand:hover {
+    cursor: pointer;
+    color: #29d1ff;
+    background-color: #cecece;
+    border-radius: 16px;
+    box-shadow: 0px 0px 3px gray;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.nav-link {
+    color: black;
+}

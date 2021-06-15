@@ -1,0 +1,294 @@
+    body {
+        background-color: #f0f0f0;
+        color: rgb(0, 0, 0);
+    }
+    /*navbar*/
+    
+    #nav-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    header,
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.233);
+    }
+    
+    header,
+    .sticky {
+        background-color: #fff;
+    }
+    
+    #logo {
+        width: 80px;
+        margin-left: 5%;
+    }
+    
+    @media screen and (max-width: 350px) {
+        #texto-Pets {
+            font-size: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 351px) {
+        #texto-Pets {
+            font-size: 55px;
+        }
+    }
+    
+    #texto-Pets {
+        font-family: 'Crimson';
+        margin-left: 15%;
+        color: #26033d;
+        text-decoration: underline rgb(103, 143, 255);
+    }
+    
+    .navbar-brand,
+    p {
+        margin-bottom: 0px;
+        text-shadow: 1px 1px 3px gray;
+    }
+    
+    .navbar-brand {
+        font-size: 75px;
+        font-family: 'Crimson';
+        padding: 0;
+        color: black;
+    }
+    
+    .nav-links {
+        font-size: 30px;
+        font-family: 'Crimson';
+        padding: 0;
+        color: black;
+        margin: 0 5px;
+        display: flex;
+    }
+    
+    .nav-links li {
+        display: inline-block;
+    }
+    
+    .nav-links button {
+        background-color: rgba(255, 255, 255, 0);
+        border: rgba(255, 255, 255, 0);
+    }
+    
+    .nav-links li a:hover,
+    .navbar-brand:hover,
+    .nav-links button:hover {
+        color: #29d1ff;
+        background-color: #0000001e;
+        border-radius: 16px;
+        box-shadow: 0px 0px 3px gray;
+        text-shadow: 1px 1px 1px gray;
+    }
+    
+    .sticky .nav-links li a:hover,
+    .navbar-brand:hover {
+        color: #29d1ff;
+        background-color: #cecece;
+        border-radius: 16px;
+        box-shadow: 0px 0px 3px gray;
+        text-shadow: 1px 1px 1px gray;
+    }
+    
+    .nav-link {
+        color: black;
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        display: block;
+        width: 90%;
+    }
+    /*carousel*/
+    
+    #slides .carousel-inner,
+    #slides .carousel-item {
+        height: 100vh;
+    }
+    
+    #slides .carousel-caption {
+        top: 80%;
+        color: black;
+    }
+    
+    #slides .carousel-caption h1 {
+        font-weight: bold;
+        top: 0;
+        bottom: auto;
+    }
+    
+    .dentroCarousel {
+        background-color: rgba(29, 198, 240, 0.432);
+        border-radius: 30px;
+        box-shadow: 0px 0px 1px #cecece;
+        text-shadow: 0.2px 0.2px 0.2px #cecece;
+    }
+    
+    .carousel-caption {
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+    }
+    
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    /*Sobre a Pets4U */
+    
+    #about-area {
+        background-color: #F9F9F9;
+    }
+    
+    .main-title {
+        color: #444;
+        margin: 50px 0 75px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .main-title::after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 100px;
+        left: 42.5%;
+    }
+    
+    .about-title {
+        font-size: 17px;
+        color: #444;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #about-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    #about-list li {
+        margin-top: 5px;
+        line-height: 30px;
+    }
+    
+    #about-list i {
+        color: #29d1ff;
+        margin-right: 15px;
+    }
+    
+    .img-fluid {
+        border-radius: 10px;
+    }
+    /*Marcas*/
+    
+    .marcas-title {
+        color: white;
+        margin: 50px 0 75px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .marcas-title::after {
+        content: "";
+        border-top: 2px solid white;
+        width: 20%;
+        position: absolute;
+        top: 100px;
+        left: 40%;
+    }
+    
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    @media screen and (max-width: 767px) {
+        #area-marcas {
+            background: url(img/paralaxMobile.jpg);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        #area-marcas {
+            background: url(img/gato.jpg);
+        }
+    }
+    
+    #area-marcas {
+        background-attachment: fixed;
+    }
+    
+    #whiskas {
+        width: 325px;
+    }
+    
+    #society {
+        width: 200px;
+    }
+    
+    #pedigree {
+        width: 250px;
+    }
+    
+    #bayer {
+        width: 150px;
+    }
+    
+    #secao {
+        width: 150px;
+    }
+    
+    #nd {
+        width: 150px;
+    }
+    
+    #premier {
+        width: 300px;
+    }
+    
+    #ferplast {
+        width: 150px;
+    }
+    
+    #jambo {
+        width: 200px;
+        margin-top: 50px;
+    }
+    /*produtos*/
+    
+    .card-body {
+        text-align: center;
+    }
+    
+    .card-link {
+        font-size: 25px;
+        font-family: 'Crimson';
+        padding: 0;
+        color: black;
+        display: block;
+    }
+    
+    .card-link:hover {
+        color: black;
+        background-color: rgba(29, 198, 240, 0.432);
+        border-radius: 16px;
+        box-shadow: 0px 0px 3px black;
+        text-shadow: 1px 1px 1px white;
+    }
+    /*footer*/
+    
+    .footer-top {
+        margin-top: 10%;
+        background-color: #cecece;
+    }
+    
+    .footer-bottom {
+        background-color: #cecece;
+    }
