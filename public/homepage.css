@@ -314,3 +314,11 @@ textarea {
 .footer-bottom {
     background-color: #cecece;
 }
+
+
+/* descricao produto */
+
+.descricao {
+    height: 150px;
+    overflow-y: auto;
+}
