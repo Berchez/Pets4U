@@ -4,10 +4,11 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .backgroundNavStaticTop {
-    height: 90vh;
+    height: 110vh;
     background-image: url(img/foto-cadastro.jpg);
     background-position: center center;
     background-size: cover;
